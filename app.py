@@ -62,14 +62,18 @@ st.set_page_config("Wheel Strategy Screener", layout="wide")
 st.title("🔄 Wheel Strategy Screener")
 
 tickers = load_tickers()
-
 tab1, tab2 = st.tabs(["📉 Cash-Secured Puts", "📈 Covered Calls"])
 
 for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
     with tab:
         st.header(f"{'Cash-Secured Puts' if opt_type == 'put' else 'Covered Calls'}")
 
-        single_ticker = st.text_input("📍 Scan a single ticker (optional)", placeholder="e.g. AAPL").strip().upper()
+        single_ticker = st.text_input(
+            "📍 Scan a single ticker (optional)",
+            placeholder="e.g. AAPL",
+            key=f"single_ticker_{opt_type}"
+        ).strip().upper()
+
         with st.sidebar:
             st.header("🔧 Filters")
             max_tickers = st.slider("Number of tickers to scan", 5, 50, 10)
@@ -90,7 +94,7 @@ for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
                 "Highest Volume": "volume",
                 "Closest to ATM (Delta)": "delta"
             }
-            sort_label = st.selectbox("Sort by", list(sort_options.keys()))
+            sort_label = st.selectbox("Sort by", list(sort_options.keys()), key=f"sort_{opt_type}")
             sort_by = sort_options[sort_label]
 
         user_settings = {
@@ -109,7 +113,7 @@ for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
             if single_ticker and single_ticker not in tickers:
                 st.warning(f"{single_ticker} is not in your filtered universe.")
             else:
-                for i, symbol in enumerate(symbols_to_scan):
+                for symbol in symbols_to_scan:
                     st.write(f"📡 Fetching {symbol}...")
                     raw_df = fetch_options(symbol, opt_type=opt_type)
                     if not raw_df.empty:
@@ -145,5 +149,6 @@ for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
                     )
                 else:
                     st.warning(f"No {opt_type.upper()} candidates met your filter criteria.")
+
 
 
