@@ -76,13 +76,17 @@ for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
 
         with st.sidebar:
             st.header("🔧 Filters")
-            max_tickers = st.slider("Number of tickers to scan", 5, 50, 10)
-            min_bid = st.number_input("Minimum Bid ($)", value=0.30, step=0.05)
-            min_delta = st.slider("Min Delta", 0.05, 0.5, 0.15)
-            max_delta = st.slider("Max Delta", 0.2, 0.7, 0.4)
-            min_dte = st.slider("Min DTE", 5, 30, 10)
-            max_dte = st.slider("Max DTE", 15, 90, 60)
-            max_capital = st.number_input("Max Capital per Contract ($)", value=1000.0, min_value=0.0, step=1.0, format="%.2f")
+            max_tickers = st.slider("Number of tickers to scan", 5, 50, 10, key=f"max_tickers_{opt_type}")
+            min_bid = st.number_input("Minimum Bid ($)", value=0.30, step=0.05, key=f"min_bid_{opt_type}")
+            min_delta = st.slider("Min Delta", 0.05, 0.5, 0.15, key=f"min_delta_{opt_type}")
+            max_delta = st.slider("Max Delta", 0.2, 0.7, 0.4, key=f"max_delta_{opt_type}")
+            min_dte = st.slider("Min DTE", 5, 30, 10, key=f"min_dte_{opt_type}")
+            max_dte = st.slider("Max DTE", 15, 90, 60, key=f"max_dte_{opt_type}")
+            max_capital = st.number_input(
+                "Max Capital per Contract ($)",
+                value=1000.0, min_value=0.0, step=1.0, format="%.2f",
+                key=f"max_cap_{opt_type}"
+            )
 
             sort_options = {
                 "Highest Annualized Yield": "annualized_yield",
@@ -106,7 +110,7 @@ for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
             "max_capital": max_capital
         }
 
-        if st.button(f"📡 Run {opt_type.upper()} Screener", key=f"run_{opt_type}"):
+        if st.button(f"📡 Run {opt_type.upper()} Screener", key=f"run_btn_{opt_type}"):
             results = []
             symbols_to_scan = [single_ticker] if single_ticker else tickers[:max_tickers]
 
