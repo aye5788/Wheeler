@@ -4,6 +4,9 @@ import requests
 from datetime import datetime
 import time
 
+# 📦 Import custom logic
+from utils import calculate_pop, calculate_ev, generate_pl_chart
+
 API_KEY = st.secrets["EODHD_API_KEY"]
 BASE_URL = "https://eodhd.com/api/mp/unicornbay/options/contracts"
 
@@ -151,8 +154,19 @@ for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
                         df_final[display_cols].sort_values(by=sort_by, ascending=ascending),
                         use_container_width=True
                     )
+
+                    # 🔍 Trade Insights
+                    st.subheader("📊 Trade Analysis (Top 5)")
+                    for _, row in df_final.head(5).iterrows():
+                        with st.expander(f"{row['symbol']} {row['strike']} @ ${row['mid']:.2f}"):
+                            pop = calculate_pop(row['delta'])
+                            ev = calculate_ev(row['mid'], row['capital_required'], pop)
+
+                            st.write(f"**PoP**: `{pop * 100:.1f}%`")
+                            st.write(f"**Expected Value**: `${ev}`")
+
+                            st.pyplot(generate_pl_chart(row['strike'], row['mid'], opt_type=opt_type))
                 else:
                     st.warning(f"No {opt_type.upper()} candidates met your filter criteria.")
-
 
 
