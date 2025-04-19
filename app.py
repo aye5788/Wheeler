@@ -75,17 +75,19 @@ with st.sidebar:
     min_dte = st.slider("Min DTE", 5, 30, 10)
     max_dte = st.slider("Max DTE", 15, 90, 60)
     max_capital = st.number_input("Max Capital per Contract ($)", value=1000.0, min_value=0.0, step=1.0, format="%.2f")
-    sort_by = st.selectbox("Sort by", {
-    "Highest Annualized Yield": "annualized_yield",
-    "Most Yield per Dollar": "yield_per_dollar",
-    "Lowest Breakeven": "breakeven",
-    "Soonest Expiration": "DTE",
-    "Smallest Capital Required": "capital_required",
-    "Highest Open Interest": "oi",
-    "Highest Volume": "volume",
-    "Closest to ATM (Delta)": "delta",
-})
 
+    sort_options = {
+        "Highest Annualized Yield": "annualized_yield",
+        "Most Yield per Dollar": "yield_per_dollar",
+        "Lowest Breakeven": "breakeven",
+        "Soonest Expiration": "DTE",
+        "Smallest Capital Required": "capital_required",
+        "Highest Open Interest": "oi",
+        "Highest Volume": "volume",
+        "Closest to ATM (Delta)": "delta"
+    }
+    sort_label = st.selectbox("Sort by", list(sort_options.keys()))
+    sort_by = sort_options[sort_label]
 
 user_settings = {
     "min_bid": min_bid,
@@ -131,10 +133,12 @@ if st.button("📡 Run Screener"):
             'annualized_yield', 'yield_per_dollar'
         ]
 
+        ascending = sort_by in ['breakeven', 'DTE', 'capital_required']
         st.subheader("✅ Screened Cash-Secured Put Opportunities")
         st.dataframe(
-            df_final[display_cols].sort_values(by=sort_by, ascending=False),
+            df_final[display_cols].sort_values(by=sort_by, ascending=ascending),
             use_container_width=True
         )
     else:
         st.warning("No CSP candidates met your filter criteria.")
+
