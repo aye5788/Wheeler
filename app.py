@@ -4,7 +4,7 @@ import requests
 from datetime import datetime
 import time
 
-API_KEY = st.secrets["EODHD_API_KEY"]  # stored in .streamlit/secrets.toml
+API_KEY = st.secrets["EODHD_API_KEY"]
 BASE_URL = "https://eodhd.com/api/mp/unicornbay/options/contracts"
 
 # === Load Tickers ===
@@ -38,7 +38,7 @@ def fetch_csp(symbol, limit=20):
         st.warning(f"Error fetching {symbol}: {e}")
         return pd.DataFrame()
 
-# === CSP Calculation ===
+# === Metrics & Filtering ===
 def calculate_metrics(df):
     today = pd.Timestamp(datetime.utcnow().date())
     df['exp_date'] = pd.to_datetime(df['attributes.exp_date'])
@@ -50,7 +50,6 @@ def calculate_metrics(df):
     df['yield_per_dollar'] = df['mid'] / df['capital_required']
     return df
 
-# === Filter Logic ===
 def apply_filters(df, user_settings):
     return df[
         (df['mid'] >= user_settings['min_bid']) &
@@ -61,7 +60,7 @@ def apply_filters(df, user_settings):
         (df['capital_required'] <= user_settings['max_capital'])
     ]
 
-# === Streamlit App ===
+# === Streamlit Layout ===
 st.set_page_config("Wheel Strategy CSP Screener", layout="wide")
 st.title("💸 Cash-Secured Put Screener (Wheel Strategy)")
 
@@ -87,34 +86,45 @@ user_settings = {
     "max_capital": max_capital
 }
 
-results = []
-for i, symbol in enumerate(tickers[:max_tickers]):
-    st.write(f"📡 Fetching {symbol}...")
-    raw_df = fetch_csp(symbol)
-    if not raw_df.empty:
-        processed = calculate_metrics(raw_df)
-        filtered = apply_filters(processed, user_settings)
-        results.append(filtered)
-    time.sleep(1.2)
+# === Run Screener Button ===
+if st.button("📡 Run Screener"):
+    results = []
+    for i, symbol in enumerate(tickers[:max_tickers]):
+        st.write(f"📡 Fetching {symbol}...")
+        raw_df = fetch_csp(symbol)
 
-# === Final Output ===
-if results:
-    df_final = pd.concat(results).reset_index(drop=True)
-    df_final = df_final.rename(columns={
-        'attributes.contract': 'contract',
-        'attributes.strike': 'strike',
-        'attributes.delta': 'delta',
-        'attributes.volatility': 'iv',
-        'attributes.open_interest': 'oi',
-        'attributes.volume': 'volume'
-    })
+        if not raw_df.empty:
+            processed = calculate_metrics(raw_df)
+            st.caption(f"✅ Returned {len(processed)} contracts for {symbol}")
+            st.dataframe(processed[['attributes.strike', 'attributes.bid', 'attributes.ask', 'attributes.delta', 'attributes.volatility']].head(3))
 
-    display_cols = [
-        'symbol', 'contract', 'strike', 'mid', 'breakeven', 'DTE',
-        'delta', 'iv', 'oi', 'volume', 'capital_required',
-        'annualized_yield', 'yield_per_dollar'
-    ]
+            filtered = apply_filters(processed, user_settings)
+            results.append(filtered)
+        else:
+            st.caption(f"⚠️ No option data for {symbol}")
+        time.sleep(1.2)
 
-    st.dataframe(df_final[display_cols].sort_values(by=sort_by, ascending=False), use_container_width=True)
-else:
-    st.warning("No results found. Try adjusting your filters.")
+    if results:
+        df_final = pd.concat(results).reset_index(drop=True)
+        df_final = df_final.rename(columns={
+            'attributes.contract': 'contract',
+            'attributes.strike': 'strike',
+            'attributes.delta': 'delta',
+            'attributes.volatility': 'iv',
+            'attributes.open_interest': 'oi',
+            'attributes.volume': 'volume'
+        })
+
+        display_cols = [
+            'symbol', 'contract', 'strike', 'mid', 'breakeven', 'DTE',
+            'delta', 'iv', 'oi', 'volume', 'capital_required',
+            'annualized_yield', 'yield_per_dollar'
+        ]
+
+        st.subheader("✅ Screened Cash-Secured Put Opportunities")
+        st.dataframe(
+            df_final[display_cols].sort_values(by=sort_by, ascending=False),
+            use_container_width=True
+        )
+    else:
+        st.warning("No CSP candidates met your filter criteria.")
