@@ -74,8 +74,18 @@ with st.sidebar:
     max_delta = st.slider("Max Delta", 0.2, 0.7, 0.4)
     min_dte = st.slider("Min DTE", 5, 30, 10)
     max_dte = st.slider("Max DTE", 15, 90, 60)
-    max_capital = st.number_input("Max Capital per Contract ($)", value=1000, step=50)
-    sort_by = st.selectbox("Sort by", ["annualized_yield", "yield_per_dollar"])
+    max_capital = st.number_input("Max Capital per Contract ($)", value=1000.0, min_value=0.0, step=1.0, format="%.2f")
+    sort_by = st.selectbox("Sort by", {
+    "Highest Annualized Yield": "annualized_yield",
+    "Most Yield per Dollar": "yield_per_dollar",
+    "Lowest Breakeven": "breakeven",
+    "Soonest Expiration": "DTE",
+    "Smallest Capital Required": "capital_required",
+    "Highest Open Interest": "oi",
+    "Highest Volume": "volume",
+    "Closest to ATM (Delta)": "delta",
+})
+
 
 user_settings = {
     "min_bid": min_bid,
