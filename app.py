@@ -7,17 +7,15 @@ import time
 API_KEY = st.secrets["EODHD_API_KEY"]
 BASE_URL = "https://eodhd.com/api/mp/unicornbay/options/contracts"
 
-# === Load Tickers ===
 @st.cache_data
 def load_tickers():
     df = pd.read_csv("filtered_universe_for_csp.csv")
     return df['code'].tolist()
 
-# === API Call ===
-def fetch_csp(symbol, limit=20):
+def fetch_options(symbol, opt_type="put", limit=20):
     params = {
         "filter[underlying_symbol]": symbol,
-        "filter[type]": "put",
+        "filter[type]": opt_type,
         "sort": "exp_date",
         "page[limit]": limit,
         "fields[options-contracts]": (
@@ -38,7 +36,6 @@ def fetch_csp(symbol, limit=20):
         st.warning(f"Error fetching {symbol}: {e}")
         return pd.DataFrame()
 
-# === Metrics & Filtering ===
 def calculate_metrics(df):
     today = pd.Timestamp(datetime.utcnow().date())
     df['exp_date'] = pd.to_datetime(df['attributes.exp_date'])
@@ -60,85 +57,93 @@ def apply_filters(df, user_settings):
         (df['capital_required'] <= user_settings['max_capital'])
     ]
 
-# === Streamlit Layout ===
-st.set_page_config("Wheel Strategy CSP Screener", layout="wide")
-st.title("💸 Cash-Secured Put Screener (Wheel Strategy)")
+# === Streamlit App ===
+st.set_page_config("Wheel Strategy Screener", layout="wide")
+st.title("🔄 Wheel Strategy Screener")
 
 tickers = load_tickers()
 
-with st.sidebar:
-    st.header("🔧 Filters")
-    max_tickers = st.slider("Number of tickers to scan", 5, 50, 10)
-    min_bid = st.number_input("Minimum Bid ($)", value=0.30, step=0.05)
-    min_delta = st.slider("Min Delta", 0.05, 0.5, 0.15)
-    max_delta = st.slider("Max Delta", 0.2, 0.7, 0.4)
-    min_dte = st.slider("Min DTE", 5, 30, 10)
-    max_dte = st.slider("Max DTE", 15, 90, 60)
-    max_capital = st.number_input("Max Capital per Contract ($)", value=1000.0, min_value=0.0, step=1.0, format="%.2f")
+tab1, tab2 = st.tabs(["📉 Cash-Secured Puts", "📈 Covered Calls"])
 
-    sort_options = {
-        "Highest Annualized Yield": "annualized_yield",
-        "Most Yield per Dollar": "yield_per_dollar",
-        "Lowest Breakeven": "breakeven",
-        "Soonest Expiration": "DTE",
-        "Smallest Capital Required": "capital_required",
-        "Highest Open Interest": "oi",
-        "Highest Volume": "volume",
-        "Closest to ATM (Delta)": "delta"
-    }
-    sort_label = st.selectbox("Sort by", list(sort_options.keys()))
-    sort_by = sort_options[sort_label]
+for tab, opt_type in zip([tab1, tab2], ["put", "call"]):
+    with tab:
+        st.header(f"{'Cash-Secured Puts' if opt_type == 'put' else 'Covered Calls'}")
 
-user_settings = {
-    "min_bid": min_bid,
-    "min_delta": min_delta,
-    "max_delta": max_delta,
-    "min_dte": min_dte,
-    "max_dte": max_dte,
-    "max_capital": max_capital
-}
+        single_ticker = st.text_input("📍 Scan a single ticker (optional)", placeholder="e.g. AAPL").strip().upper()
+        with st.sidebar:
+            st.header("🔧 Filters")
+            max_tickers = st.slider("Number of tickers to scan", 5, 50, 10)
+            min_bid = st.number_input("Minimum Bid ($)", value=0.30, step=0.05)
+            min_delta = st.slider("Min Delta", 0.05, 0.5, 0.15)
+            max_delta = st.slider("Max Delta", 0.2, 0.7, 0.4)
+            min_dte = st.slider("Min DTE", 5, 30, 10)
+            max_dte = st.slider("Max DTE", 15, 90, 60)
+            max_capital = st.number_input("Max Capital per Contract ($)", value=1000.0, min_value=0.0, step=1.0, format="%.2f")
 
-# === Run Screener Button ===
-if st.button("📡 Run Screener"):
-    results = []
-    for i, symbol in enumerate(tickers[:max_tickers]):
-        st.write(f"📡 Fetching {symbol}...")
-        raw_df = fetch_csp(symbol)
+            sort_options = {
+                "Highest Annualized Yield": "annualized_yield",
+                "Most Yield per Dollar": "yield_per_dollar",
+                "Lowest Breakeven": "breakeven",
+                "Soonest Expiration": "DTE",
+                "Smallest Capital Required": "capital_required",
+                "Highest Open Interest": "oi",
+                "Highest Volume": "volume",
+                "Closest to ATM (Delta)": "delta"
+            }
+            sort_label = st.selectbox("Sort by", list(sort_options.keys()))
+            sort_by = sort_options[sort_label]
 
-        if not raw_df.empty:
-            processed = calculate_metrics(raw_df)
-            st.caption(f"✅ Returned {len(processed)} contracts for {symbol}")
-            st.dataframe(processed[['attributes.strike', 'attributes.bid', 'attributes.ask', 'attributes.delta', 'attributes.volatility']].head(3))
+        user_settings = {
+            "min_bid": min_bid,
+            "min_delta": min_delta,
+            "max_delta": max_delta,
+            "min_dte": min_dte,
+            "max_dte": max_dte,
+            "max_capital": max_capital
+        }
 
-            filtered = apply_filters(processed, user_settings)
-            results.append(filtered)
-        else:
-            st.caption(f"⚠️ No option data for {symbol}")
-        time.sleep(1.2)
+        if st.button(f"📡 Run {opt_type.upper()} Screener", key=f"run_{opt_type}"):
+            results = []
+            symbols_to_scan = [single_ticker] if single_ticker else tickers[:max_tickers]
 
-    if results:
-        df_final = pd.concat(results).reset_index(drop=True)
-        df_final = df_final.rename(columns={
-            'attributes.contract': 'contract',
-            'attributes.strike': 'strike',
-            'attributes.delta': 'delta',
-            'attributes.volatility': 'iv',
-            'attributes.open_interest': 'oi',
-            'attributes.volume': 'volume'
-        })
+            if single_ticker and single_ticker not in tickers:
+                st.warning(f"{single_ticker} is not in your filtered universe.")
+            else:
+                for i, symbol in enumerate(symbols_to_scan):
+                    st.write(f"📡 Fetching {symbol}...")
+                    raw_df = fetch_options(symbol, opt_type=opt_type)
+                    if not raw_df.empty:
+                        processed = calculate_metrics(raw_df)
+                        filtered = apply_filters(processed, user_settings)
+                        results.append(filtered)
+                    else:
+                        st.caption(f"⚠️ No option data for {symbol}")
+                    time.sleep(1.2)
 
-        display_cols = [
-            'symbol', 'contract', 'strike', 'mid', 'breakeven', 'DTE',
-            'delta', 'iv', 'oi', 'volume', 'capital_required',
-            'annualized_yield', 'yield_per_dollar'
-        ]
+                if results:
+                    df_final = pd.concat(results).reset_index(drop=True)
+                    df_final = df_final.rename(columns={
+                        'attributes.contract': 'contract',
+                        'attributes.strike': 'strike',
+                        'attributes.delta': 'delta',
+                        'attributes.volatility': 'iv',
+                        'attributes.open_interest': 'oi',
+                        'attributes.volume': 'volume'
+                    })
 
-        ascending = sort_by in ['breakeven', 'DTE', 'capital_required']
-        st.subheader("✅ Screened Cash-Secured Put Opportunities")
-        st.dataframe(
-            df_final[display_cols].sort_values(by=sort_by, ascending=ascending),
-            use_container_width=True
-        )
-    else:
-        st.warning("No CSP candidates met your filter criteria.")
+                    display_cols = [
+                        'symbol', 'contract', 'strike', 'mid', 'breakeven', 'DTE',
+                        'delta', 'iv', 'oi', 'volume', 'capital_required',
+                        'annualized_yield', 'yield_per_dollar'
+                    ]
+
+                    ascending = sort_by in ['breakeven', 'DTE', 'capital_required']
+                    st.subheader(f"✅ Screened {opt_type.upper()} Opportunities")
+                    st.dataframe(
+                        df_final[display_cols].sort_values(by=sort_by, ascending=ascending),
+                        use_container_width=True
+                    )
+                else:
+                    st.warning(f"No {opt_type.upper()} candidates met your filter criteria.")
+
 
