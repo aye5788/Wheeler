@@ -1,0 +1,526 @@
+code,name,last_day_data_date,adjusted_close,refund_1d,refund_1d_p,refund_5d,refund_5d_p,exchange,currency_symbol,market_capitalization,earnings_share,dividend_yield,sector,industry,avgvol_1d,avgvol_200d,cap_category
+ENB,Enbridge Inc,2025-04-17,45.37,0.8,1.79,3.55,8.49,US,$,98869846016,1.67,0.0574,Energy,Oil & Gas Midstream,0,3952286.11,Large Cap
+AR,Antero Resources Corp,2025-04-17,34.42,0.12,0.35,2.5,7.83,US,$,10710814720,0.18,,Energy,Oil & Gas E&P,0,4195241.82,Large Cap
+BMY,Bristol-Myers Squibb Company,2025-04-17,49.23,-0.13,-0.26,-1.23,-2.44,US,$,100171227136,-4.41,0.0504,Healthcare,Drug Manufacturers - General,0,12209013.5,Large Cap
+UBS,UBS Group AG,2025-04-17,27.94,0.13,0.47,0.8387,3.09,US,$,89661980672,1.52,0.0322,Financial Services,Banks - Diversified,3102300,2301300.5,Large Cap
+INTC,Intel Corporation,2025-04-17,18.93,-0.3,-1.56,-0.95,-4.78,US,$,82545967104,-4.38,0.0224,Technology,Semiconductors,85646667,86753774.48,Large Cap
+PPL,PPL Corporation,2025-04-17,35.72,0.44,1.25,1.52,4.44,US,$,26398939136,1.2,0.0305,Utilities,Utilities - Regulated Electric,0,4831198.52,Large Cap
+FTI,TechnipFMC PLC,2025-04-17,25.54,0.55,2.2,1.4,5.8,US,$,10741408768,1.91,0.0078,Energy,Oil & Gas Equipment & Services,3377500,4061138.5,Large Cap
+FCX,Freeport-McMoran Copper & Gold Inc,2025-04-17,32.9,-0.42,-1.26,1.6893,5.41,US,$,47279603712,1.3,0.0182,Basic Materials,Copper,0,13681923.46,Large Cap
+CMG,Chipotle Mexican Grill Inc,2025-04-17,48.17,0.09,0.19,-2.1,-4.18,US,$,65286725632,1.11,,Consumer Cyclical,Restaurants,9359600,12772475.28,Large Cap
+KEY,KeyCorp,2025-04-17,14.27,0.2,1.42,0.53,3.86,US,$,15868097536,-0.19,0.0583,Financial Services,Banks - Regional,0,12988048.83,Large Cap
+CNQ,Canadian Natural Resources Ltd,2025-04-17,28.8,0.63,2.24,2.63,10.05,US,$,60458401792,2.04,0.0579,Energy,Oil & Gas E&P,0,5639440.9,Large Cap
+CNP,CenterPoint Energy Inc,2025-04-17,37.16,0.38,1.03,0.97,2.68,US,$,24255334400,1.58,0.0237,Utilities,Utilities - Regulated Electric,0,5713879.65,Large Cap
+LUV,Southwest Airlines Company,2025-04-17,24.74,-0.12,-0.48,-1.05,-4.07,US,$,14198631424,0.76,0.0291,Industrials,Airlines,11520700,9823922.5,Large Cap
+HRL,Hormel Foods Corporation,2025-04-17,30.58,0.4,1.33,1.3523,4.63,US,$,16816339968,1.38,0.0379,Consumer Defensive,Packaged Foods,0,2588811.13,Large Cap
+KGC,Kinross Gold Corporation,2025-04-17,14.8,-0.23,-1.53,1.11,8.11,US,$,18210510848,0.77,0.0081,Basic Materials,Gold,19611500,18099765.47,Large Cap
+OXY,Occidental Petroleum Corporation,2025-04-17,39.71,1.26,3.28,3.24,8.88,US,$,38982074368,2.26,0.0242,Energy,Oil & Gas E&P,0,11750824.48,Large Cap
+T,AT&T Inc,2025-04-17,27.15,0.13,0.48,0.76,2.88,US,$,195500081152,1.49,0.0409,Communication Services,Telecom Services,24870300,37248787.0,Large Cap
+SMFTF,Smurfit Kappa Group Plc,2025-04-17,41.35,0.58,1.42,1.08,2.68,US,$,24667889664,3.16,0.0353,Consumer Cyclical,Packaging & Containers,3693719,4709456.85,Large Cap
+ARCC,Ares Capital Corporation,2025-04-17,20.4,0.31,1.54,0.56,2.82,US,$,13963351040,2.44,0.0941,Financial Services,Asset Management,4237028,4200718.41,Large Cap
+NLY,Annaly Capital Management Inc,2025-04-17,17.9,0.27,1.53,0.6,3.47,US,$,10696233984,1.62,0.1564,Real Estate,REIT - Mortgage,0,6573331.87,Large Cap
+CCJ,Cameco Corp,2025-04-17,41.18,-0.1,-0.24,2.5,6.46,US,$,17926148096,0.28,0.0027,Energy,Uranium,0,4258239.3,Large Cap
+BP,BP PLC ADR,2025-04-17,28.32,0.66,2.39,2.09,7.97,US,$,74017996800,0.14,0.0678,Energy,Oil & Gas Integrated,0,9935878.67,Large Cap
+UDR,UDR Inc,2025-04-17,41.29,0.42,1.03,1.88,4.77,US,$,15561457664,0.26,0.0417,Real Estate,REIT - Residential,0,2153174.12,Large Cap
+TRP,TC Energy Corp,2025-04-17,49.42,0.52,1.06,4.01,8.83,US,$,51363192832,2.9,0.0478,Energy,Oil & Gas Midstream,0,2484838.8,Large Cap
+VOD,Vodafone Group PLC ADR,2025-04-17,9.31,0.14,1.53,0.86,10.18,US,$,23205453824,0.99,0.0774,Communication Services,Telecom Services,10189900,7405943.09,Large Cap
+LVS,Las Vegas Sands Corp,2025-04-17,32.77,0.91,2.86,1.05,3.31,US,$,23156199424,1.96,0.0305,Consumer Cyclical,Resorts & Casinos,0,5871241.75,Large Cap
+BAC,Bank of America Corp,2025-04-17,37.41,0.08,0.21,1.56,4.35,US,$,282822574080,3.35,0.0278,Financial Services,Banks - Diversified,0,40005420.41,Large Cap
+KMI,Kinder Morgan Inc,2025-04-17,27.1,0.15,0.56,1.31,5.08,US,$,60217556992,1.16,0.0432,Energy,Oil & Gas Midstream,0,14057665.56,Large Cap
+FE,FirstEnergy Corporation,2025-04-17,42.02,1.22,2.99,1.93,4.81,US,$,24250834944,1.7,0.0424,Utilities,Utilities - Regulated Electric,0,3674265.27,Large Cap
+DB,Deutsche Bank AG,2025-04-17,23.47,0.13,0.56,1.97,9.16,US,$,45616058368,1.55,0.0301,Financial Services,Banks - Regional,0,2393421.5,Large Cap
+OHI,Omega Healthcare Investors Inc,2025-04-17,38.57,0.27,0.7,0.9,2.39,US,$,11157297152,1.55,0.0695,Real Estate,REIT - Healthcare Facilities,0,1894686.26,Large Cap
+FOX,Fox Corp Class B,2025-04-17,44.57,-0.13,-0.29,-1.44,-3.13,US,$,20949950464,4.66,0.0121,Communication Services,Entertainment,663968,1076781.66,Large Cap
+SU,Suncor Energy Inc,2025-04-17,34.54,0.73,2.16,2.33,7.23,US,$,42730815488,3.38,0.0461,Energy,Oil & Gas Integrated,0,4287389.27,Large Cap
+ADM,Archer-Daniels-Midland Company,2025-04-17,47.82,1.69,3.66,3.34,7.51,US,$,22961059840,3.65,0.0427,Consumer Defensive,Farm Products,0,3483607.65,Large Cap
+AGI,Alamos Gold Inc,2025-04-17,29.58,-0.75,-2.47,1.61,5.76,US,$,12438745088,0.69,0.0034,Basic Materials,Gold,3122800,2616918.0,Large Cap
+KIM,Kimco Realty Corporation,2025-04-17,20.59,0.43,2.13,0.82,4.15,US,$,13990884352,0.55,0.0486,Real Estate,REIT - Retail,0,4429296.34,Large Cap
+BHP,BHP Group Limited,2025-04-17,46.49,0.86,1.88,3.0,6.9,US,$,117962342400,4.48,0.0533,Basic Materials,Other Industrial Metals & Mining,0,2576984.48,Large Cap
+LKQ,LKQ Corporation,2025-04-17,42.03,0.65,1.57,0.92,2.24,US,$,10866981888,2.63,0.0286,Consumer Cyclical,Auto Parts,1639467,2322599.88,Large Cap
+WDC,Western Digital Corporation,2025-04-17,36.51,0.89,2.5,1.64,4.7,US,$,12699054080,3.46,,Technology,Computer Hardware,7393300,8004669.61,Large Cap
+CCL,Carnival Corporation,2025-04-17,17.99,0.12,0.67,0.39,2.22,US,$,24373932032,1.55,,Consumer Cyclical,Travel Services,0,25179526.78,Large Cap
+FOXA,Fox Corp Class A,2025-04-17,47.97,-0.29,-0.6,-1.55,-3.13,US,$,20949938176,4.66,0.0113,Communication Services,Entertainment,3921573,3516794.24,Large Cap
+BCE,BCE Inc,2025-04-17,22.04,0.42,1.94,1.06,5.05,US,$,20317024256,0.13,0.1302,Communication Services,Telecom Services,0,3001797.61,Large Cap
+BTI,British American Tobacco p.l.c.,2025-04-17,42.37,0.54,1.29,1.82,4.49,US,$,92952567808,1.8,0.0707,Consumer Defensive,Tobacco,0,4763800.01,Large Cap
+RPRX,Royalty Pharma Plc,2025-04-17,32.6,0.41,1.27,1.39,4.45,US,$,18722668544,1.91,0.027,Healthcare,Biotechnology,2537295,3361857.5,Large Cap
+GOLD,Barrick Gold Corp,2025-04-17,20.17,-0.48,-2.32,0.93,4.83,US,$,34690985984,1.22,0.0198,Basic Materials,Gold,19887500,21980191.85,Large Cap
+HAL,Halliburton Company,2025-04-17,22.53,1.1,5.13,2.26,11.15,US,$,19420432384,2.83,0.0302,Energy,Oil & Gas Equipment & Services,18170420,10256898.32,Large Cap
+BAX,Baxter International Inc,2025-04-17,28.89,1.07,3.85,0.75,2.67,US,$,14818373632,-0.64,0.0235,Healthcare,Medical Instruments & Supplies,0,4513788.24,Large Cap
+MFC,Manulife Financial Corp,2025-04-17,28.61,0.02,0.07,1.31,4.8,US,$,49161138176,2.03,0.043,Financial Services,Insurance - Life,0,2136814.56,Large Cap
+F,Ford Motor Company,2025-04-17,9.63,0.23,2.45,0.49,5.36,US,$,38294175744,1.46,0.0779,Consumer Cyclical,Auto Manufacturers,129204600,77537810.5,Large Cap
+DAL,Delta Air Lines Inc,2025-04-17,40.85,0.26,0.64,1.49,3.79,US,$,26673211392,5.64,0.0147,Industrials,Airlines,0,9723093.93,Large Cap
+HBAN,Huntington Bancshares Incorporated,2025-04-17,13.67,0.4,3.01,0.78,6.05,US,$,19914592256,1.3,0.0467,Financial Services,Banks - Regional,31069237,17623153.87,Large Cap
+NI,NiSource Inc,2025-04-17,39.29,0.34,0.87,1.28,3.37,US,$,18490071040,1.62,0.0285,Utilities,Utilities - Regulated Gas,3938200,4052969.0,Large Cap
+DVN,Devon Energy Corporation,2025-04-17,30.31,1.01,3.45,2.56,9.23,US,$,19657670656,4.56,0.0317,Energy,Oil & Gas E&P,10351200,8996455.63,Large Cap
+FLEX,Flex Ltd,2025-04-17,31.54,0.61,1.97,2.12,7.21,US,$,12083068928,2.45,,Technology,Electronic Components,4606797,3870521.89,Large Cap
+PBA,Pembina Pipeline Corp,2025-04-17,37.98,0.59,1.58,2.82,8.02,US,$,22054909952,2.15,0.0508,Energy,Oil & Gas Midstream,0,1286284.81,Large Cap
+TU,Telus Corp,2025-04-17,15.01,0.25,1.69,0.59,4.09,US,$,22727542784,0.48,0.0745,Communication Services,Telecom Services,2639800,3028927.0,Large Cap
+SMCI,Super Micro Computer Inc,2025-04-17,31.505,-0.385,-1.21,-2.175,-6.46,US,$,18697619456,2.3,,Technology,Computer Hardware,26958502,74487247.56,Large Cap
+BAM,Brookfield Asset Management Inc,2025-04-17,48.59,0.6,1.25,2.51,5.45,US,$,79556403200,1.28,0.036,Financial Services,Asset Management,0,1328225.08,Large Cap
+VZ,Verizon Communications Inc,2025-04-17,44.04,0.43,0.99,1.12,2.61,US,$,188931604480,4.14,0.0615,Communication Services,Telecom Services,16504800,20785323.0,Large Cap
+CVE,Cenovus Energy Inc,2025-04-17,12.1,0.44,3.77,1.0,9.01,US,$,22063745024,1.2,0.0416,Energy,Oil & Gas Integrated,0,8955265.26,Large Cap
+PCG,PG&E Corp,2025-04-17,17.23,0.05,0.29,0.76,4.61,US,$,37866029056,1.15,0.0058,Utilities,Utilities - Regulated Electric,0,17123135.21,Large Cap
+USB,U.S. Bancorp,2025-04-17,38.2,0.38,1.0,0.95,2.55,US,$,59591999488,4.04,0.0524,Financial Services,Banks - Regional,0,9276294.48,Large Cap
+HPQ,HP Inc,2025-04-17,23.83,0.36,1.53,0.96,4.2,US,$,22464612352,2.78,0.0486,Technology,Computer Hardware,0,7625780.15,Large Cap
+PFE,Pfizer Inc,2025-04-17,22.14,0.1,0.45,0.55,2.55,US,$,125565902848,1.41,0.0777,Healthcare,Drug Manufacturers - General,0,40843474.11,Large Cap
+DOW,Dow Inc,2025-04-17,28.15,0.68,2.48,0.86,3.15,US,$,19867254784,1.57,0.0995,Basic Materials,Chemicals,0,6479795.93,Large Cap
+CG,Carlyle Group Inc,2025-04-17,35.84,0.59,1.67,-0.79,-2.16,US,$,12945515520,2.77,0.0391,Financial Services,Asset Management,3036030,2647064.8,Large Cap
+JD,JD.com Inc Adr,2025-04-17,34.72,-0.61,-1.73,-0.86,-2.42,US,$,54881558528,3.64,0.0288,Consumer Cyclical,Internet Retail,13869900,14546249.21,Large Cap
+HTHT,Huazhu Group Ltd,2025-04-17,34.48,-0.52,-1.49,2.66,8.36,US,$,11302267904,1.3,0.0464,Consumer Cyclical,Lodging,2463098,2096557.31,Large Cap
+GLPI,Gaming & Leisure Properties,2025-04-17,49.52,0.46,0.94,2.63,5.61,US,$,13609730048,2.87,0.0614,Real Estate,REIT - Specialty,904292,1259443.96,Large Cap
+RYAAY,Ryanair Holdings PLC ADR,2025-04-17,45.68,0.5,1.11,3.24,7.63,US,$,24278052864,3.38,0.0205,Industrials,Airlines,981087,1702969.31,Large Cap
+ERIC,Telefonaktiebolaget LM Ericsson B ADR,2025-04-17,8.17,0.23,2.9,1.06,14.91,US,$,26831994880,0.05,0.0323,Technology,Communication Equipment,26277970,18896988.4,Large Cap
+HMC,Honda Motor Co Ltd ADR,2025-04-17,29.12,0.66,2.32,2.51,9.43,US,$,42705354752,4.58,0.0488,Consumer Cyclical,Auto Manufacturers,0,1127095.56,Large Cap
+NOK,Nokia Corp ADR,2025-04-17,5.11,0.03,0.59,0.29,6.02,US,$,27750877184,0.35,0.0273,Technology,Communication Equipment,0,18598940.23,Large Cap
+SYF,Synchrony Financial,2025-04-17,47.87,1.11,2.37,1.24,2.66,US,$,18609463296,8.55,0.0209,Financial Services,Credit Services,0,3883301.72,Large Cap
+GSK,GlaxoSmithKline PLC ADR,2025-04-17,35.93,0.56,1.58,2.33,6.93,US,$,72793104384,1.65,0.0433,Healthcare,Drug Manufacturers - General,4813900,4843747.92,Large Cap
+TEVA,Teva Pharma Industries Ltd ADR,2025-04-17,13.65,0.22,1.64,0.83,6.47,US,$,15656003584,-1.45,,Healthcare,Drug Manufacturers - Specialty & Generic,0,9779263.26,Large Cap
+RDY,Dr. Reddy’s Laboratories Ltd ADR,2025-04-17,13.67,0.23,1.71,0.96,7.55,US,$,11389188096,0.75,0.007,Healthcare,Drug Manufacturers - Specialty & Generic,0,1453749.18,Large Cap
+EBR,Centrais Electricas Brasileiras SA,2025-04-17,7.23,0.21,2.99,0.2,2.84,US,$,14278816768,0.76,0.0304,Utilities,Utilities - Renewable,0,1200999.98,Large Cap
+SONY,Sony Group Corp,2025-04-17,24.01,0.65,2.78,1.09,4.76,US,$,146964004864,1.3,0.0051,Technology,Consumer Electronics,4549522,4037010.1,Large Cap
+SAN,Banco Santander SA ADR,2025-04-17,6.73,0.04,0.6,0.5,8.03,US,$,101201698816,0.87,0.0342,Financial Services,Banks - Diversified,0,3663592.52,Large Cap
+BCS,Barclays PLC ADR,2025-04-17,14.72,0.16,1.1,1.16,8.55,US,$,52552757248,1.84,0.0287,Financial Services,Banks - Diversified,0,15072319.41,Large Cap
+BBVA,Banco Bilbao Viscaya Argentaria SA ADR,2025-04-17,13.48,0.05,0.37,0.94,7.5,US,$,77833789440,1.9,0.057,Financial Services,Banks - Diversified,0,1891311.33,Large Cap
+SMFG,Sumitomo Mitsui Financial Group Inc,2025-04-17,13.56,0.45,3.43,1.1,8.83,US,$,88182579200,1.4,0.0301,Financial Services,Banks - Diversified,0,1439115.61,Large Cap
+ITUB,Itau Unibanco Banco Holding SA,2025-04-17,5.66,0.07,1.25,0.29,5.4,US,$,56388427776,0.64,0.0667,Financial Services,Banks - Regional,0,24883144.15,Large Cap
+CUK,Carnival Plc ADS,2025-04-17,16.23,0.11,0.68,0.41,2.59,US,$,21282560000,1.55,,Consumer Cyclical,Travel Services,0,1809521.0,Large Cap
+HMY,Harmony Gold Mining Company Limited,2025-04-17,17.55,-0.44,-2.45,1.4299,8.87,US,$,11117906944,0.88,0.0101,Basic Materials,Gold,6178997,5537152.62,Large Cap
+AU,AngloGold Ashanti plc,2025-04-17,43.25,-2.37,-5.2,4.4,11.33,US,$,21778104320,2.33,0.0319,Basic Materials,Gold,0,2574131.97,Large Cap
+GFI,Gold Fields Ltd ADR,2025-04-17,23.99,-0.68,-2.76,0.59,2.52,US,$,22065115136,1.38,0.0227,Basic Materials,Gold,0,3214096.52,Large Cap
+EPD,Enterprise Products Partners LP,2025-04-17,31.02,0.58,1.91,2.07,7.15,US,$,67180019712,2.69,0.069,Energy,Oil & Gas Midstream,0,4491522.17,Large Cap
+VALE,Vale SA ADR,2025-04-17,9.11,0.11,1.22,0.21,2.36,US,$,38888583168,1.44,0.1513,Basic Materials,Other Industrial Metals & Mining,0,31953958.72,Large Cap
+PUK,Prudential PLC ADR,2025-04-17,20.74,0.52,2.57,1.61,8.42,US,$,26900815872,1.68,0.0223,Financial Services,Insurance - Life,0,1098881.29,Large Cap
+EC,Ecopetrol SA ADR,2025-04-17,9.12,0.26,2.93,0.89,10.81,US,$,18749169664,1.59,0.2638,Energy,Oil & Gas Integrated,0,2411968.22,Large Cap
+YPF,YPF Sociedad Anonima,2025-04-17,33.08,0.59,1.82,5.5,19.94,US,$,13414899712,5.99,,Energy,Oil & Gas Integrated,1411000,2065650.02,Large Cap
+TS,Tenaris SA ADR,2025-04-17,33.26,0.57,1.74,2.28,7.36,US,$,17827258368,3.62,0.0499,Energy,Oil & Gas Equipment & Services,0,1728650.16,Large Cap
+IBN,ICICI Bank Limited,2025-04-17,33.22,1.25,3.91,2.42,7.86,US,$,118312370176,1.6,0.0072,Financial Services,Banks - Regional,0,4974521.83,Large Cap
+WES,Western Midstream Partners LP,2025-04-17,38.13,0.74,1.98,2.24,6.24,US,$,14539769856,4.02,0.0918,Energy,Oil & Gas Midstream,765900,1270155.76,Large Cap
+PAA,Plains All American Pipeline LP,2025-04-17,17.74,0.24,1.37,1.14,6.87,US,$,12484985856,0.73,0.0857,Energy,Oil & Gas Midstream,2800330,3228708.53,Large Cap
+AMH,American Homes 4 Rent,2025-04-17,36.86,0.51,1.4,2.52,7.34,US,$,15537853440,1.08,0.0326,Real Estate,REIT - Residential,0,2245427.73,Large Cap
+STM,STMicroelectronics NV ADR,2025-04-17,20.26,0.14,0.7,1.33,7.03,US,$,18252840960,1.66,0.0178,Technology,Semiconductors,0,5916498.97,Large Cap
+ASX,ASE Industrial Holding Co Ltd ADR,2025-04-17,8.08,-0.13,-1.58,0.22,2.8,US,$,17547902976,0.44,0.0391,Technology,Semiconductors,0,9233255.39,Large Cap
+UMC,United Microelectronics,2025-04-17,6.81,-0.04,-0.58,0.27,4.13,US,$,17104473088,0.57,0.0669,Technology,Semiconductors,0,13435410.96,Large Cap
+MT,ArcelorMittal SA ADR,2025-04-17,27.23,0.31,1.15,1.75,6.87,US,$,20736188416,1.69,0.0202,Basic Materials,Steel,0,1904853.17,Large Cap
+INFY,Infosys Ltd ADR,2025-04-17,16.14,-0.44,-2.65,-0.84,-4.95,US,$,68687478784,0.76,0.0308,Technology,Information Technology Services,0,9671834.18,Large Cap
+SBS,Companhia de Saneamento Basico do Estado de Sao Paulo SABESP ADR,2025-04-17,18.72,0.37,2.02,1.06,6.0,US,$,12795307008,1.12,0.0142,Utilities,Utilities - Regulated Water,0,1105431.6,Large Cap
+AMX,America Movil SAB de CV ADR,2025-04-17,16.13,0.9,5.91,2.21,15.88,US,$,48977129472,0.46,0.0314,Communication Services,Telecom Services,0,1757124.77,Large Cap
+RCI,Rogers Communications Inc,2025-04-17,25.91,0.82,3.27,2.37,10.07,US,$,14244230144,2.29,0.054,Communication Services,Telecom Services,0,1018125.0,Large Cap
+ING,ING Group NV ADR,2025-04-17,18.65,0.09,0.48,1.23,7.06,US,$,56846131200,2.24,0.0616,Financial Services,Banks - Diversified,0,2320475.54,Large Cap
+PBR,Petroleo Brasileiro Petrobras SA ADR,2025-04-17,11.62,0.4,3.57,0.32,2.83,US,$,70697820160,1.16,0.2645,Energy,Oil & Gas Integrated,0,16628297.93,Large Cap
+RHHBY,Roche Holding Ltd ADR,2025-04-17,38.9,0.32,0.83,2.04,5.53,US,$,251605598208,1.57,0.035,Healthcare,Drug Manufacturers - General,2893800,2064797.48,Large Cap
+NTDOY,Nintendo Co ADR,2025-04-17,18.06,0.56,3.2,0.92,5.37,US,$,85064589312,0.48,0.0145,Communication Services,Electronic Gaming & Multimedia,0,1414430.93,Large Cap
+BAYRY,Bayer AG PK,2025-04-17,6.02,0.11,1.86,0.39,6.93,US,$,23656794112,-0.73,0.005,Healthcare,Drug Manufacturers - General,305700,1107931.36,Large Cap
+RYCEY,Rolls Royce Holdings plc,2025-04-17,9.68,0.05,0.52,0.58,6.37,US,$,81030217728,0.39,,Industrials,Aerospace & Defense,1196600,3735082.73,Large Cap
+PHYS,Sprott Physical Gold Trust,2025-04-17,25.51,-0.09,-0.35,1.19,4.89,US,$,22233954304,0.1,,Financial Services,Asset Management,5980700,3251906.0,Large Cap
+KHC,Kraft Heinz Co,2025-04-17,29.46,0.65,2.26,0.62,2.15,US,$,35157565440,2.26,0.0543,Consumer Defensive,Packaged Foods,7779500,9351908.79,Large Cap
+HPE,Hewlett Packard Enterprise Co,2025-04-17,15.14,0.26,1.75,1.4,10.19,US,$,19887601664,2.08,0.0343,Technology,Communication Equipment,0,16355120.64,Large Cap
+YUMC,Yum China Holdings Inc,2025-04-17,41.37,-2.57,-5.85,-3.45,-7.7,US,$,15473413120,2.33,0.0232,Consumer Cyclical,Restaurants,6305100,2993749.0,Large Cap
+TECK,Teck Resources Ltd Class B,2025-04-17,32.91,-0.54,-1.61,1.16,3.65,US,$,16533688320,-0.65,0.0106,Basic Materials,Other Industrial Metals & Mining,0,3186636.74,Large Cap
+INVH,Invitation Homes Inc,2025-04-17,33.62,0.58,1.76,1.98,6.26,US,$,20605126656,0.74,0.0345,Real Estate,REIT - Residential,0,3419288.53,Large Cap
+SMMT,Summit Therapeutics PLC,2025-04-17,24.61,1.56,6.77,4.46,22.13,US,$,18154305536,-0.31,,Healthcare,Biotechnology,3447100,3319147.0,Large Cap
+ZTO,ZTO Express (Cayman) Inc,2025-04-17,18.81,0.05,0.27,1.15,6.51,US,$,15219885056,1.45,0.0372,Industrials,Integrated Freight & Logistics,1035200,2798608.93,Large Cap
+FNMAS,Federal National Mortgage Association Pref S,2025-04-18,11.1,0.0,0.0,0.69,6.63,US,$,14049492992,0.007,,Financial Services,Mortgage Finance,43983,1540168.71,Large Cap
+GME,GameStop Corp,2025-04-17,26.78,0.53,2.02,1.76,7.03,US,$,11972910080,0.33,,Consumer Cyclical,Specialty Retail,0,10194679.45,Large Cap
+BNS,Bank of Nova Scotia,2025-04-17,47.47,0.36,0.76,1.99,4.38,US,$,59125309440,3.47,0.0625,Financial Services,Banks - Diversified,0,1689922.05,Large Cap
+EXC,Exelon Corporation,2025-04-17,47.26,0.75,1.61,2.14,4.74,US,$,47710855168,2.45,0.0339,Utilities,Utilities - Regulated Electric,7496300,7157873.5,Large Cap
+SLB,Schlumberger NV,2025-04-17,35.11,0.96,2.81,2.57,7.9,US,$,47744684032,3.11,0.0325,Energy,Oil & Gas Equipment & Services,15923000,13440581.51,Large Cap
+VICI,VICI Properties Inc,2025-04-17,32.54,0.49,1.53,2.46,8.18,US,$,34385018880,2.56,0.0532,Real Estate,REIT - Diversified,8361700,5918342.5,Large Cap
+MUFG,Mitsubishi UFJ Financial Group Inc ADR,2025-04-17,11.87,0.3,2.59,0.77,6.94,US,$,136582152192,1.16,,Financial Services,Banks - Diversified,0,3972581.71,Large Cap
+EQH,Axa Equitable Holdings Inc,2025-04-17,46.87,0.52,1.12,1.07,2.34,US,$,14381074432,3.78,0.0205,Financial Services,Asset Management,0,2594276.67,Large Cap
+EQNR,Equinor ASA ADR,2025-04-17,23.32,-0.12,-0.51,0.76,3.37,US,$,63229149184,3.11,0.0635,Energy,Oil & Gas Integrated,0,3633495.96,Large Cap
+ET,Energy Transfer LP,2025-04-17,17.27,0.35,2.07,1.36,8.55,US,$,59256999936,1.28,0.0753,Energy,Oil & Gas Midstream,0,16207738.86,Large Cap
+TAK,Takeda Pharmaceutical Co Ltd ADR,2025-04-17,14.71,0.06,0.41,0.84,6.06,US,$,46296784896,0.45,0.0443,Healthcare,Drug Manufacturers - Specialty & Generic,0,1929696.82,Large Cap
+PINS,Pinterest Inc,2025-04-17,25.26,-0.19,-0.75,-0.97,-3.7,US,$,17081318400,2.67,,Communication Services,Internet Content & Information,0,10729894.48,Large Cap
+AVTR,Avantor Inc,2025-04-17,15.1,-0.15,-0.98,0.4,2.72,US,$,10289472512,1.04,,Healthcare,Medical Instruments & Supplies,0,7124877.15,Large Cap
+BKR,Baker Hughes Co,2025-04-17,38.91,0.78,2.05,2.25,6.14,US,$,38534520832,2.98,0.0236,Energy,Oil & Gas Equipment & Services,5548900,6983728.5,Large Cap
+DOC,Healthpeak Properties Inc,2025-04-17,18.75,0.272,1.47,0.6797,3.76,US,$,13098674176,0.36,0.0651,Real Estate,REIT - Healthcare Facilities,4277200,4950303.0,Large Cap
+CHWY,Chewy Inc,2025-04-17,35.24,0.48,1.38,2.66,8.16,US,$,14576604160,0.91,,Consumer Cyclical,Internet Retail,0,5963901.02,Large Cap
+AMCR,Amcor PLC,2025-04-17,9.39,0.14,1.51,0.37,4.1,US,$,13571743744,0.55,0.0543,Consumer Cyclical,Packaging & Containers,0,16622063.36,Large Cap
+GMAB,Genmab AS,2025-04-17,20.04,0.49,2.51,2.03,11.27,US,$,12541773824,1.84,,Healthcare,Biotechnology,1135338,1163474.31,Large Cap
+PROSY,Prosus NV ADR,2025-04-17,8.47,0.02,0.24,0.36,4.44,US,$,96515653632,0.63,0.0025,Communication Services,Internet Content & Information,3186300,1155067.02,Large Cap
+WTRG,Essential Utilities Inc,2025-04-17,40.53,0.48,1.2,2.18,5.68,US,$,11166987264,2.17,0.0321,Utilities,Utilities - Regulated Water,962800,1505215.1,Large Cap
+PTEN,Patterson-UTI Energy Inc,2025-04-17,6.07,0.24,4.12,0.48,8.59,US,$,2342886400,-2.44,0.0527,Energy,Oil & Gas Drilling,18649017,9110030.37,Mid Cap
+MTCH,Match Group Inc,2025-04-17,29.02,0.37,1.29,0.94,3.35,US,$,7267449344,2.02,0.0262,Communication Services,Internet Content & Information,3561208,4883632.46,Mid Cap
+WBS,Webster Financial Corporation,2025-04-17,45.15,0.82,1.85,2.96,7.02,US,$,7598790144,4.37,0.0354,Financial Services,Banks - Regional,1184000,1272192.19,Mid Cap
+ADMA,ADMA Biologics Inc,2025-04-17,21.31,0.08,0.38,2.63,14.08,US,$,5083798528,0.81,,Healthcare,Biotechnology,2965938,3735050.25,Mid Cap
+NYT,New York Times Company,2025-04-17,49.27,0.47,0.96,1.4,2.92,US,$,8045939200,1.77,0.0146,Communication Services,Publishing,1480600,1355588.5,Mid Cap
+EXEL,Exelixis Inc,2025-04-17,36.19,0.04,0.11,1.73,5.02,US,$,9973384192,1.76,,Healthcare,Biotechnology,2255390,2227256.95,Mid Cap
+EXAS,EXACT Sciences Corporation,2025-04-17,41.58,-0.68,-1.61,-2.16,-4.94,US,$,7723693568,-5.59,,Healthcare,Diagnostics & Research,3157662,2455186.67,Mid Cap
+GEO,Geo Group Inc,2025-04-17,29.69,0.62,2.13,2.25,8.2,US,$,4240801024,0.22,,Industrials,Security & Protection Services,0,2871740.86,Mid Cap
+POR,Portland General Electric Co,2025-04-17,43.08,0.08,0.19,1.46,3.51,US,$,4717389312,3.01,0.0464,Utilities,Utilities - Regulated Electric,0,1037669.0,Mid Cap
+FMC,FMC Corporation,2025-04-17,37.84,0.58,1.56,1.6,4.42,US,$,4726367232,3.21,0.0613,Basic Materials,Agricultural Inputs,0,2026559.77,Mid Cap
+SBRA,Sabra Healthcare REIT Inc,2025-04-17,18.14,-0.03,-0.17,0.87,5.04,US,$,4315705344,0.54,0.0662,Real Estate,REIT - Healthcare Facilities,2252110,2218227.1,Mid Cap
+SMTC,Semtech Corporation,2025-04-17,26.24,0.25,0.96,-0.76,-2.81,US,$,2269851904,-2.26,,Technology,Semiconductors,1919586,2127585.27,Mid Cap
+AGNC,AGNC Investment Corp,2025-04-17,8.34,0.04,0.48,0.22,2.71,US,$,7898814464,0.93,0.1727,Real Estate,REIT - Mortgage,39143734,20508167.02,Mid Cap
+ACHC,Acadia Healthcare Company Inc,2025-04-17,23.91,0.07,0.29,-3.17,-11.71,US,$,2202775808,2.78,,Healthcare,Medical Care Facilities,6314242,1669583.08,Mid Cap
+MPW,Medical Properties Trust Inc,2025-04-17,5.45,0.06,1.11,0.28,5.42,US,$,3273269760,-4.02,0.0587,Real Estate,REIT - Healthcare Facilities,0,12353967.86,Mid Cap
+HBM,Hudbay Minerals Inc.,2025-04-17,7.04,-0.02,-0.28,0.52,7.98,US,$,2780793088,0.2,0.002,Basic Materials,Copper,6438642,4958820.06,Mid Cap
+CNX,CNX Resources Corp,2025-04-17,30.82,-0.06,-0.19,1.86,6.42,US,$,4537227776,-0.6,,Energy,Oil & Gas E&P,0,2693418.1,Mid Cap
+MDU,MDU Resources Group Inc,2025-04-17,16.77,0.02,0.12,0.62,3.84,US,$,3426631168,0.88,0.031,Industrials,Conglomerates,0,1973732.24,Mid Cap
+GNTX,Gentex Corporation,2025-04-17,21.56,0.49,2.33,0.61,2.91,US,$,4878208512,1.76,0.0223,Consumer Cyclical,Auto Parts,2276125,1771587.65,Mid Cap
+COLB,Columbia Banking System Inc,2025-04-17,22.18,0.23,1.05,1.47,7.1,US,$,4660350976,2.55,0.0649,Financial Services,Banks - Regional,992306,1712977.56,Mid Cap
+KTOS,Kratos Defense & Security Solutions,2025-04-17,33.09,-0.18,-0.54,1.38,4.35,US,$,5072233984,0.11,,Industrials,Aerospace & Defense,2131744,1720639.38,Mid Cap
+STAG,STAG Industrial Inc,2025-04-17,33.15,0.64,1.97,2.25,7.28,US,$,6311462400,1.04,0.0449,Real Estate,REIT - Industrial,0,1220016.67,Mid Cap
+ONB,Old National Bancorp,2025-04-17,19.59,0.13,0.67,1.28,6.99,US,$,6255322112,1.68,0.0286,Financial Services,Banks - Regional,4943720,2593077.05,Mid Cap
+SNV,Synovus Financial Corp,2025-04-17,41.29,0.77,1.9,1.72,4.35,US,$,5748146176,3.55,0.0378,Financial Services,Banks - Regional,0,1467720.38,Mid Cap
+VLY,Valley National Bancorp,2025-04-17,8.25,0.03,0.36,0.21,2.61,US,$,4620231168,0.69,0.0533,Financial Services,Banks - Regional,6777024,7533156.45,Mid Cap
+CE,Celanese Corporation,2025-04-17,40.09,2.56,6.82,2.51,6.68,US,$,4480218112,-13.86,0.003,Basic Materials,Chemicals,0,2285732.45,Mid Cap
+FLR,Fluor Corporation,2025-04-17,33.96,0.41,1.22,0.89,2.69,US,$,5705925120,12.3,,Industrials,Engineering & Construction,0,2312298.03,Mid Cap
+ORI,Old Republic International Corp,2025-04-17,37.83,0.12,0.32,1.25,3.42,US,$,9350138880,3.24,0.0307,Financial Services,Insurance - Property & Casualty,909737,1178318.93,Mid Cap
+HR,Healthcare Realty Trust Incorporated,2025-04-17,16.0,0.3,1.91,0.84,5.54,US,$,5673887744,-1.81,0.079,Real Estate,REIT - Healthcare Facilities,0,3070722.24,Mid Cap
+OGE,OGE Energy Corporation,2025-04-17,45.1,0.4,0.89,1.81,4.18,US,$,9079937024,2.19,0.0374,Utilities,Utilities - Regulated Electric,0,1116619.96,Mid Cap
+AG,First Majestic Silver Corp,2025-04-17,6.52,-0.18,-2.69,0.5,8.31,US,$,3160622336,-0.34,0.0035,Basic Materials,Silver,0,12876744.81,Mid Cap
+IAG,IAMGold Corporation,2025-04-17,7.83,-0.26,-3.21,0.95,13.81,US,$,4502641152,1.5,,Basic Materials,Gold,0,10223440.12,Mid Cap
+FOLD,Amicus Therapeutics Inc,2025-04-17,6.83,0.13,1.94,0.32,4.92,US,$,2098449152,-0.18,,Healthcare,Biotechnology,3105765,2597919.58,Mid Cap
+GBDC,Golub Capital BDC Inc,2025-04-17,14.13,0.36,2.61,0.49,3.59,US,$,3751501056,1.33,0.1104,Financial Services,Asset Management,1258389,1454814.06,Mid Cap
+DINO,HF Sinclair Corp,2025-04-17,29.03,1.25,4.5,2.12,7.88,US,$,5469455360,0.91,0.0689,Energy,Oil & Gas Refining & Marketing,0,2530952.09,Mid Cap
+NOG,Northern Oil & Gas Inc,2025-04-17,24.19,1.26,5.49,2.47,11.37,US,$,2391246848,5.14,0.0744,Energy,Oil & Gas E&P,0,1513070.69,Mid Cap
+VFC,VF Corporation,2025-04-17,10.45,0.14,1.36,-0.99,-8.65,US,$,4071037696,-0.37,0.0344,Consumer Cyclical,Apparel Manufacturing,0,7574881.73,Mid Cap
+FBP,First Bancorp,2025-04-17,18.25,0.22,1.22,0.67,3.81,US,$,2977049600,1.81,0.0395,Financial Services,Banks - Regional,0,1092950.41,Mid Cap
+M,Macy’s Inc,2025-04-17,11.13,0.12,1.09,-0.32,-2.79,US,$,3100528896,2.07,0.0656,Consumer Cyclical,Department Stores,0,6584247.54,Mid Cap
+MWA,Mueller Water Products,2025-04-17,25.02,-0.04,-0.16,0.93,3.86,US,$,3918131968,0.87,0.0107,Industrials,Specialty Industrial Machinery,0,1599533.16,Mid Cap
+UA,Under Armour Inc C,2025-04-17,5.47,0.19,3.6,0.49,9.84,US,$,2431699456,-0.29,,Consumer Cyclical,Apparel Manufacturing,0,3610109.1,Mid Cap
+KRG,Kite Realty Group Trust,2025-04-17,21.36,0.32,1.52,1.09,5.38,US,$,4798780416,0.02,0.0506,Real Estate,REIT - Retail,0,1661253.59,Mid Cap
+HOG,Harley-Davidson Inc,2025-04-17,22.51,0.66,3.02,1.02,4.75,US,$,2784554496,3.44,0.032,Consumer Cyclical,Recreational Vehicles,0,1950176.2,Mid Cap
+FNMA,Federal National Mortgage Association,2025-04-17,6.26,0.15,2.45,0.54,9.44,US,$,7249643520,0.0,,Financial Services,Mortgage Finance,2974100,10759255.86,Mid Cap
+UEC,Uranium Energy Corp,2025-04-17,5.05,0.23,4.77,0.67,15.3,US,$,2165096704,-0.15,,Energy,Uranium,0,7979324.53,Mid Cap
+CUBE,CubeSmart,2025-04-17,39.57,1.1,2.86,2.52,6.8,US,$,9106164736,1.72,0.0526,Real Estate,REIT - Industrial,0,1468423.89,Mid Cap
+CPRX,Catalyst Pharmaceuticals Inc,2025-04-17,22.52,0.33,1.49,1.07,4.99,US,$,2746516736,1.31,,Healthcare,Biotechnology,720883,1097533.19,Mid Cap
+FR,First Industrial Realty Trust Inc,2025-04-17,47.55,0.7,1.49,2.83,6.33,US,$,6489433600,2.01,0.0374,Real Estate,REIT - Industrial,0,1159046.94,Mid Cap
+VNO,Vornado Realty Trust,2025-04-17,34.51,0.32,0.94,1.63,4.96,US,$,6988205568,0.04,0.0214,Real Estate,REIT - Office,867900,1638188.29,Mid Cap
+FULT,Fulton Financial Corporation,2025-04-17,15.88,-0.09,-0.56,0.65,4.27,US,$,2893399552,1.7,0.0453,Financial Services,Banks - Regional,2878814,1475764.96,Mid Cap
+CTRE,CareTrust REIT Inc.,2025-04-17,28.75,0.13,0.45,1.08,3.9,US,$,5395282432,0.8,0.0466,Real Estate,REIT - Healthcare Facilities,1294136,1861608.55,Mid Cap
+KRC,Kilroy Realty Corp,2025-04-17,31.79,0.56,1.79,2.46,8.39,US,$,3796330240,1.77,0.0679,Real Estate,REIT - Office,0,1266103.85,Mid Cap
+RRC,Range Resources Corp,2025-04-17,34.18,0.08,0.23,1.93,5.98,US,$,8207985152,1.09,0.0105,Energy,Oil & Gas E&P,3726100,2423662.0,Mid Cap
+ACAD,ACADIA Pharmaceuticals Inc,2025-04-17,14.73,0.16,1.1,0.62,4.39,US,$,2456801792,1.36,,Healthcare,Biotechnology,1208871,1886533.64,Mid Cap
+CRK,Comstock Resources Inc,2025-04-17,19.77,0.06,0.3,1.72,9.53,US,$,5791008768,-0.76,,Energy,Oil & Gas E&P,0,2574313.86,Mid Cap
+CXW,CoreCivic Inc,2025-04-17,22.21,0.26,1.18,1.35,6.47,US,$,2427952640,0.62,,Industrials,Security & Protection Services,0,1147310.55,Mid Cap
+LSCC,Lattice Semiconductor Corporation,2025-04-17,41.18,-0.41,-0.99,-1.0,-2.37,US,$,5666944512,0.44,,Technology,Semiconductors,2605434,2647259.94,Mid Cap
+LXP,LXP Industrial Trust,2025-04-17,7.76,0.04,0.52,0.33,4.44,US,$,2301259008,0.13,0.0683,Real Estate,REIT - Industrial,0,2177779.39,Mid Cap
+TECH,Bio-Techne Corp,2025-04-17,48.1,-1.88,-3.76,-1.16,-2.35,US,$,7604032512,0.98,0.0067,Healthcare,Biotechnology,2741500,1205212.44,Mid Cap
+URBN,Urban Outfitters Inc,2025-04-17,49.48,1.78,3.73,1.06,2.19,US,$,4584856576,4.26,,Consumer Cyclical,Apparel Retail,1703800,1934186.14,Mid Cap
+UGI,UGI Corporation,2025-04-17,33.15,0.35,1.07,2.19,7.07,US,$,7121051136,2.55,0.0452,Utilities,Utilities - Regulated Gas,0,2095600.89,Mid Cap
+VRN,Veren Inc,2025-04-17,6.13,0.17,2.85,0.66,12.07,US,$,3750438400,0.33,0.0521,Energy,Oil & Gas E&P,29639200,11410763.0,Mid Cap
+CNK,Cinemark Holdings Inc,2025-04-17,28.54,0.51,1.82,1.36,5.0,US,$,3365408256,2.06,0.0112,Communication Services,Entertainment,0,2934782.17,Mid Cap
+TAC,TransAlta Corp,2025-04-17,8.72,0.05,0.58,0.2,2.35,US,$,2597688064,0.42,0.021,Utilities,Utilities - Independent Power Producers,0,1220008.97,Mid Cap
+HOMB,Home BancShares Inc,2025-04-17,26.46,0.48,1.85,1.26,5.0,US,$,5244530688,2.09,0.0295,Financial Services,Banks - Regional,0,1043737.53,Mid Cap
+GNW,Genworth Financial Inc,2025-04-17,6.66,0.1,1.52,0.14,2.15,US,$,2769754112,0.7,,Financial Services,Insurance - Life,0,3733660.99,Mid Cap
+FNB,F.N.B. Corp,2025-04-17,12.61,0.38,3.11,0.81,6.86,US,$,4531592192,1.27,0.0381,Financial Services,Banks - Regional,0,2535371.6,Mid Cap
+FRO,Frontline Ltd,2025-04-17,15.44,0.67,4.54,1.41,10.05,US,$,3437299200,2.23,0.0518,Energy,Oil & Gas Midstream,0,2582237.52,Mid Cap
+HL,Hecla Mining Company,2025-04-17,5.81,-0.18,-3.01,0.34,6.22,US,$,3673721088,0.06,0.0026,Basic Materials,Other Precious Metals & Mining,0,13979826.11,Mid Cap
+NOV,NOV Inc.,2025-04-17,12.53,0.48,3.98,1.0,8.67,US,$,4744559616,1.6,0.0239,Energy,Oil & Gas Equipment & Services,0,4094356.98,Mid Cap
+CYTK,Cytokinetics Inc,2025-04-17,39.48,0.33,0.84,1.63,4.31,US,$,4705542144,-5.26,,Healthcare,Biotechnology,1075657,1439967.48,Mid Cap
+MTG,MGIC Investment Corp,2025-04-17,24.03,0.19,0.8,0.82,3.53,US,$,5827923968,2.89,0.0216,Financial Services,Insurance - Specialty,0,1822059.83,Mid Cap
+TGTX,TG Therapeutics Inc,2025-04-17,38.32,0.11,0.29,2.34,6.5,US,$,6018960896,0.15,,Healthcare,Biotechnology,1075716,3072290.09,Mid Cap
+BANC,"Banc of California, Inc.",2025-04-17,13.21,0.24,1.85,1.11,9.17,US,$,2233586432,0.52,0.0303,Financial Services,Banks - Regional,0,2332390.84,Mid Cap
+SLM,SLM Corp,2025-04-17,26.78,0.5,1.9,1.0,3.88,US,$,5635128320,2.73,0.0194,Financial Services,Credit Services,1979295,2315045.73,Mid Cap
+BRKR,Bruker Corporation,2025-04-17,36.28,-1.46,-3.87,-1.79,-4.7,US,$,5497181184,0.76,0.0055,Healthcare,Medical Devices,3551073,1537012.93,Mid Cap
+HASI,Hannon Armstrong Sustainable Infrastructure Capital Inc,2025-04-17,24.22,0.38,1.59,1.49,6.56,US,$,2954016512,1.62,0.0694,Financial Services,Asset Management,0,1124772.91,Mid Cap
+MOS,The Mosaic Company,2025-04-17,27.27,0.3,1.11,3.07,12.69,US,$,8650862592,0.55,0.0323,Basic Materials,Agricultural Inputs,0,4589590.41,Mid Cap
+HTGC,Hercules Capital Inc,2025-04-17,17.54,0.31,1.8,0.71,4.22,US,$,3037138944,1.61,0.1072,Financial Services,Asset Management,787300,1099556.73,Mid Cap
+FMCC,Federal Home Loan Mortgage Corp,2025-04-17,5.18,0.06,1.17,0.43,9.05,US,$,3367310848,0.0,,Financial Services,Mortgage Finance,896600,4592869.75,Mid Cap
+MUR,Murphy Oil Corporation,2025-04-17,21.37,0.78,3.79,1.4,7.01,US,$,3049841152,2.72,0.0608,Energy,Oil & Gas E&P,0,2189594.73,Mid Cap
+CDE,Coeur Mining Inc,2025-04-17,6.03,-0.24,-3.83,0.54,9.84,US,$,3854092800,0.15,,Basic Materials,Gold,0,12391498.25,Mid Cap
+CUZ,Cousins Properties Incorporated,2025-04-17,26.88,0.1,0.37,0.97,3.74,US,$,4514093056,0.3,0.0476,Real Estate,REIT - Office,1450200,1283531.52,Mid Cap
+SEE,Sealed Air Corporation,2025-04-17,26.4,0.53,2.05,1.14,4.51,US,$,3848116736,1.84,0.0303,Consumer Cyclical,Packaging & Containers,0,1542431.36,Mid Cap
+DAR,Darling Ingredients Inc,2025-04-17,30.8,1.03,3.46,2.13,7.43,US,$,4870896640,1.73,,Consumer Defensive,Packaged Foods,0,2127335.23,Mid Cap
+IRT,Independence Realty Trust Inc,2025-04-17,19.15,0.28,1.48,0.86,4.7,US,$,4539679744,0.17,0.0334,Real Estate,REIT - Residential,0,1969699.15,Mid Cap
+PENN,Penn National Gaming Inc,2025-04-17,14.34,0.07,0.49,-0.35,-2.38,US,$,2193260032,-2.05,,Consumer Cyclical,Resorts & Casinos,3559193,3743628.81,Mid Cap
+HUN,Huntsman Corporation,2025-04-17,13.04,0.19,1.48,-0.4,-2.98,US,$,2265660928,-0.94,0.0767,Basic Materials,Chemicals,0,2488787.57,Mid Cap
+SM,SM Energy Co,2025-04-17,23.03,0.91,4.11,1.9803,9.41,US,$,2636059904,6.67,0.0347,Energy,Oil & Gas E&P,0,1851386.58,Mid Cap
+AKR,Acadia Realty Trust,2025-04-17,19.92,0.62,3.21,1.35,7.27,US,$,2582309376,0.19,0.0402,Real Estate,REIT - Retail,0,1098803.8,Mid Cap
+APA,APA Corporation,2025-04-17,16.11,0.74,4.81,1.51,10.34,US,$,5826407424,2.27,0.0621,Energy,Oil & Gas E&P,7370512,6985130.43,Mid Cap
+SKX,Skechers USA Inc,2025-04-17,47.63,0.92,1.97,-1.72,-3.49,US,$,7168077312,4.16,,Consumer Cyclical,Footwear & Accessories,0,2325654.39,Mid Cap
+KNX,Knight Transportation Inc,2025-04-17,39.39,1.23,3.22,-1.2,-2.96,US,$,6381218816,0.73,0.0183,Industrials,Trucking,0,2285940.56,Mid Cap
+OLN,Olin Corporation,2025-04-17,20.89,0.52,2.55,1.25,6.36,US,$,2404083712,0.91,0.0383,Basic Materials,Chemicals,0,1647011.57,Mid Cap
+RHI,Robert Half International Inc,2025-04-17,45.42,-2.55,-5.32,-3.08,-6.35,US,$,4641878528,2.44,0.052,Industrials,Staffing & Employment Services,0,1234324.56,Mid Cap
+BWA,BorgWarner Inc,2025-04-17,26.45,0.43,1.65,0.78,3.04,US,$,5810694656,1.63,0.0166,Consumer Cyclical,Auto Parts,1371500,2767304.82,Mid Cap
+PAAS,Pan American Silver Corp.,2025-04-17,27.2,-0.82,-2.93,2.36,9.5,US,$,9851323392,0.31,0.0147,Basic Materials,Gold,0,3468169.47,Mid Cap
+PRGO,Perrigo Company PLC,2025-04-17,25.32,0.18,0.72,0.96,3.94,US,$,3455142144,-1.17,0.0458,Healthcare,Drug Manufacturers - Specialty & Generic,0,1504036.26,Mid Cap
+MAC,Macerich Company,2025-04-17,14.68,0.44,3.09,0.35,2.44,US,$,3869985792,-0.88,0.0463,Real Estate,REIT - Retail,0,1965670.59,Mid Cap
+TTEK,Tetra Tech Inc,2025-04-17,30.22,0.37,1.24,0.96,3.28,US,$,8100047872,0.95,0.0077,Industrials,Engineering & Construction,1045200,2117869.0,Mid Cap
+CAKE,The Cheesecake Factory,2025-04-17,47.87,1.06,2.26,2.56,5.65,US,$,2367118848,3.2,0.0226,Consumer Cyclical,Restaurants,867890,1212830.51,Mid Cap
+ZION,Zions Bancorporation,2025-04-17,44.28,0.92,2.12,1.81,4.26,US,$,6534089728,4.95,0.0388,Financial Services,Banks - Regional,1796600,1595695.82,Mid Cap
+DEI,Douglas Emmett Inc,2025-04-17,13.99,0.23,1.67,0.71,5.35,US,$,2774636544,0.13,0.0543,Real Estate,REIT - Office,0,1749925.09,Mid Cap
+GT,Goodyear Tire & Rubber Co,2025-04-17,9.75,0.1,1.04,0.69,7.62,US,$,2779861248,0.24,,Consumer Cyclical,Auto Parts,3576970,5632989.61,Mid Cap
+STWD,Starwood Property Trust Inc,2025-04-17,18.56,0.33,1.81,0.97,5.51,US,$,6448542208,1.1,0.1034,Real Estate,REIT - Mortgage,0,2473655.34,Mid Cap
+MARA,Marathon Digital Holdings Inc,2025-04-17,12.66,0.34,2.76,0.92,7.84,US,$,4378042880,1.72,,Financial Services,Capital Markets,19415500,44782223.0,Mid Cap
+HP,Helmerich and Payne Inc,2025-04-17,20.59,0.94,4.78,2.17,11.78,US,$,2046205440,3.03,0.0486,Energy,Oil & Gas Drilling,0,1614199.92,Mid Cap
+GLNG,Golar LNG Limited,2025-04-17,38.13,0.81,2.17,4.74,14.2,US,$,3989236992,0.48,0.0262,Energy,Oil & Gas Midstream,1021039,1413270.22,Mid Cap
+ESRT,Empire State Realty Trust Inc,2025-04-17,7.11,0.06,0.85,0.25,3.64,US,$,2077527936,0.28,0.0197,Real Estate,REIT - Diversified,0,1255250.09,Mid Cap
+WU,Western Union Co,2025-04-17,9.81,0.06,0.62,0.32,3.37,US,$,3284770816,2.74,0.0958,Financial Services,Credit Services,4725500,4991132.29,Mid Cap
+EGO,Eldorado Gold Corp,2025-04-17,19.8,-0.26,-1.3,1.8,10.0,US,$,4068305920,1.46,,Basic Materials,Gold,0,1591999.29,Mid Cap
+IEP,Icahn Enterprises LP,2025-04-17,8.54,0.17,2.03,0.51,6.35,US,$,4464165376,-0.94,0.3513,Energy,Oil & Gas Refining & Marketing,597000,1017954.5,Mid Cap
+VNOM,Viper Energy Ut,2025-04-17,41.37,2.29,5.86,4.87,13.34,US,$,9059120128,3.82,0.0602,Energy,Oil & Gas Midstream,2105900,1389756.48,Mid Cap
+GRFS,Grifols SA ADR,2025-04-17,7.08,0.05,0.71,0.56,8.59,US,$,5695626240,0.26,,Healthcare,Drug Manufacturers - General,500119,1214249.8,Mid Cap
+ERJ,Embraer SA ADR,2025-04-17,43.56,1.0,2.35,2.52,6.14,US,$,8000142848,1.92,,Industrials,Aerospace & Defense,0,1563498.06,Mid Cap
+CX,Cemex SAB de CV ADR,2025-04-17,5.4,0.2,3.85,0.38,7.57,US,$,7834481664,0.61,0.0153,Basic Materials,Building Materials,0,11493912.04,Mid Cap
+SQM,Sociedad Quimica y Minera de Chile SA ADR B,2025-04-17,34.92,0.34,0.98,1.6,4.8,US,$,9974478848,-1.41,0.0601,Basic Materials,Specialty Chemicals,0,1098390.58,Mid Cap
+EDU,New Oriental Education & Technology,2025-04-17,44.82,0.63,1.43,2.25,5.29,US,$,7447022080,2.3,0.0099,Consumer Defensive,Education & Training Services,0,1903608.71,Mid Cap
+FUN,Six Flags Entertainment Corporation,2025-04-17,33.4,1.56,4.9,1.11,3.44,US,$,3352224512,-3.22,0.0359,Consumer Cyclical,Leisure,0,1666013.04,Mid Cap
+BVN,Compania de Minas Buenaventura SAA ADR,2025-04-17,14.3,-0.69,-4.6,0.3,2.14,US,$,3629669120,1.45,,Basic Materials,Other Precious Metals & Mining,0,1120338.55,Mid Cap
+AM,Antero Midstream Partners LP,2025-04-17,17.18,0.32,1.9,1.3,8.19,US,$,8222451712,0.83,0.0524,Energy,Oil & Gas Midstream,0,3057636.07,Mid Cap
+PAGP,Plains GP Holdings LP,2025-04-17,18.93,0.22,1.18,1.19,6.71,US,$,4407964160,0.52,0.0803,Energy,Oil & Gas Midstream,1885132,1571584.29,Mid Cap
+ABR,Arbor Realty Trust,2025-04-17,11.03,0.3,2.8,0.59,5.65,US,$,2090240000,1.18,0.1559,Real Estate,REIT - Mortgage,0,3196571.38,Mid Cap
+NNN,National Retail Properties Inc,2025-04-17,41.63,0.27,0.65,2.56,6.55,US,$,7827855872,2.15,0.0557,Real Estate,REIT - Retail,0,1232465.88,Mid Cap
+BXMT,Blackstone Mortgage Trust Inc,2025-04-17,18.35,0.26,1.44,0.95,5.46,US,$,3148768512,-1.17,0.1025,Real Estate,REIT - Mortgage,0,1745119.26,Mid Cap
+BRX,Brixmor Property,2025-04-17,25.54,0.46,1.83,1.49,6.2,US,$,7816261632,1.11,0.045,Real Estate,REIT - Retail,0,2225226.4,Mid Cap
+AXTA,Axalta Coating Systems Ltd,2025-04-17,31.23,0.11,0.35,1.01,3.34,US,$,6812605952,1.78,,Basic Materials,Specialty Chemicals,0,1978152.91,Mid Cap
+KT,KT Corporation,2025-04-17,18.01,0.34,1.92,0.99,5.82,US,$,8804116480,0.67,0.0402,Communication Services,Telecom Services,0,1226295.38,Mid Cap
+AEG,Aegon NV ADR,2025-04-17,6.1,0.05,0.83,0.28,4.81,US,$,9770491904,0.42,0.0579,Financial Services,Insurance - Diversified,0,4751977.49,Mid Cap
+PSLV,Sprott Physical Silver,2025-04-17,10.96,-0.06,-0.54,0.44,4.18,US,$,5698926080,0.23,,Financial Services,Asset Management,26077400,18021002.5,Mid Cap
+EWH,iShares MSCI Hong Kong ETF,2025-04-17,16.43,0.09,0.55,0.66,4.19,US,$,2083284096,,0.0368,,,3253800,3134410.83,Mid Cap
+EWU,iShares MSCI United Kingdom ETF,2025-04-17,36.97,0.42,1.15,2.3,6.63,US,$,2241128960,,0.0246,,,1428000,1380693.53,Mid Cap
+EWT,iShares MSCI Taiwan ETF,2025-04-17,44.88,-0.11,-0.24,1.56,3.6,US,$,5380499968,,0.0216,,,2251900,3476868.69,Mid Cap
+IONS,Ionis Pharmaceuticals Inc,2025-04-17,28.4,0.05,0.18,1.69,6.33,US,$,4514605568,-3.04,,Healthcare,Biotechnology,842700,1578140.5,Mid Cap
+AROC,Archrock Inc,2025-04-17,24.03,0.45,1.91,1.72,7.71,US,$,4217697536,1.05,0.0316,Energy,Oil & Gas Equipment & Services,939100,1452938.06,Mid Cap
+OMF,OneMain Holdings Inc,2025-04-17,44.41,0.31,0.7,1.39,3.23,US,$,5301132800,4.24,0.0937,Financial Services,Credit Services,0,1063856.02,Mid Cap
+ASB,Associated Banc-Corp,2025-04-17,19.97,0.31,1.58,0.68,3.53,US,$,3307810816,0.72,0.0461,Financial Services,Banks - Regional,0,1577376.3,Mid Cap
+VIRT,Virtu Financial Inc,2025-04-17,38.46,0.66,1.75,2.92,8.22,US,$,5972260864,2.97,0.025,Financial Services,Capital Markets,1170164,1095179.42,Mid Cap
+VKTX,Viking Therapeutics Inc,2025-04-17,23.94,0.34,1.44,2.42,11.25,US,$,2688198656,-1.01,,Healthcare,Biotechnology,5042405,4133817.76,Mid Cap
+VVV,Valvoline Inc,2025-04-17,33.48,0.27,0.81,0.73,2.23,US,$,4255308032,2.1,,Consumer Cyclical,Auto & Truck Dealerships,910900,1423584.81,Mid Cap
+DJT,Trump Media & Technology Group Corp.,2025-04-17,22.04,2.3,11.65,3.25,17.3,US,$,4862354944,-2.36,,Communication Services,Internet Content & Information,12034500,18252215.8,Mid Cap
+GDS,GDS Holdings Ltd,2025-04-17,21.47,1.65,8.32,1.08,5.3,US,$,4056734720,-0.61,,Technology,Information Technology Services,3220849,2289877.18,Mid Cap
+AQN,Algonquin Power & Utilities Corp,2025-04-17,5.41,0.14,2.66,0.53,10.86,US,$,4151915264,0.07,0.0481,Utilities,Utilities - Diversified,15595800,7677277.5,Mid Cap
+CRSP,Crispr Therapeutics AG,2025-04-17,37.77,-0.01,-0.03,3.51,10.25,US,$,3261938176,-4.34,,Healthcare,Biotechnology,1027671,1702347.54,Mid Cap
+UAA,Under Armour Inc A,2025-04-17,5.83,0.27,4.86,0.63,12.12,US,$,2431698688,-0.29,,Consumer Cyclical,Apparel Manufacturing,0,12650926.3,Mid Cap
+CADE,Cadence Bancorp,2025-04-17,27.91,0.02,0.07,0.94,3.49,US,$,5122182656,2.77,0.0394,Financial Services,Banks - Regional,0,1268444.71,Mid Cap
+APLE,Apple Hospitality REIT Inc,2025-04-17,11.88,0.36,3.13,0.58,5.13,US,$,2837633024,0.89,0.0808,Real Estate,REIT - Hotel & Motel,0,2155495.3,Mid Cap
+SAND,Sandstorm Gold Ltd N,2025-04-17,8.49,0.02,0.24,0.89,11.71,US,$,2491602688,0.05,0.0068,Basic Materials,Gold,0,3671325.84,Mid Cap
+RNA,Avidity Biosciences Inc,2025-04-17,26.66,0.9,3.49,2.55,10.58,US,$,3204851968,-2.89,,Healthcare,Biotechnology,1530663,1360146.81,Mid Cap
+CLSK,CleanSpark Inc,2025-04-17,7.51,0.23,3.16,0.38,5.33,US,$,2108868096,0.0,,Financial Services,Capital Markets,21256871,28029625.39,Mid Cap
+MTDR,Matador Resources Company,2025-04-17,41.47,1.34,3.34,3.63,9.59,US,$,5192334336,7.14,0.0301,Energy,Oil & Gas E&P,0,1497810.56,Mid Cap
+ESI,Element Solutions Inc,2025-04-17,18.93,0.33,1.77,0.92,5.11,US,$,4589616640,1.0,0.0169,Basic Materials,Specialty Chemicals,0,1900891.72,Mid Cap
+NEXT,Nextdecade Corp,2025-04-17,7.82,0.36,4.83,0.96,13.99,US,$,2036656512,-0.24,,Energy,Oil & Gas Equipment & Services,2513484,1889701.86,Mid Cap
+SSRM,SSR Mining Inc,2025-04-17,10.84,-0.14,-1.28,0.66,6.48,US,$,2195512064,-1.29,,Basic Materials,Gold,1779927,2463933.01,Mid Cap
+SWTX,SpringWorks Therapeutics Inc,2025-04-17,37.92,0.18,0.48,3.49,10.14,US,$,2843408384,-3.48,,Healthcare,Biotechnology,1452867,1526533.7,Mid Cap
+RIOT,Riot Blockchain Inc,2025-04-17,6.46,0.1,1.57,-0.33,-4.86,US,$,2262343680,0.34,,Financial Services,Capital Markets,20974655,26139442.18,Mid Cap
+APLS,Apellis Pharmaceuticals Inc,2025-04-17,18.2,0.04,0.22,-0.59,-3.14,US,$,2284391168,-1.6,,Healthcare,Biotechnology,2455500,2302578.56,Mid Cap
+COLD,Americold Realty Trust,2025-04-17,20.21,0.59,3.01,1.37,7.27,US,$,5773087232,-0.33,0.0455,Real Estate,REIT - Industrial,0,2107459.17,Mid Cap
+WSC,Willscot Mobile Mini Holdings Corp A,2025-04-17,23.32,0.11,0.47,-1.47,-5.93,US,$,4280969216,0.15,0.012,Industrials,Rental & Leasing Services,2962900,2889605.71,Mid Cap
+PAGS,PagSeguro Digital Ltd,2025-04-17,8.53,0.12,1.43,0.48,5.96,US,$,2591627008,1.13,,Technology,Software - Infrastructure,0,5010080.65,Mid Cap
+AMRX,"Amneal Pharmaceuticals, Inc. Class A Common Stock",2025-04-17,7.36,0.18,2.51,0.39,5.6,US,$,3426072832,-0.38,,Healthcare,Drug Manufacturers - Specialty & Generic,2132600,1352030.0,Mid Cap
+SRRK,Scholar Rock Holding Corp,2025-04-17,30.75,0.99,3.33,4.44,16.88,US,$,2916951040,-2.47,,Healthcare,Biotechnology,923615,1293595.75,Mid Cap
+OZK,Bank Ozk,2025-04-17,41.63,2.29,5.82,4.4261,11.9,US,$,4696988160,6.14,0.0413,Financial Services,Banks - Regional,2706624,1316307.71,Mid Cap
+EPRT,Essential Properties Realty Trust Inc,2025-04-17,32.21,0.34,1.07,2.18,7.26,US,$,6066237952,1.15,0.0366,Real Estate,REIT - Retail,0,1387007.34,Mid Cap
+MGY,Magnolia Oil & Gas Corp,2025-04-17,21.09,0.37,1.79,1.46,7.44,US,$,4092451328,1.94,0.0284,Energy,Oil & Gas E&P,0,2273218.55,Mid Cap
+ELAN,Elanco Animal Health,2025-04-17,8.44,0.34,4.2,-0.27,-3.1,US,$,4190105088,0.68,,Healthcare,Drug Manufacturers - Specialty & Generic,0,4804998.06,Mid Cap
+GH,Guardant Health Inc,2025-04-17,44.97,-0.21,-0.46,3.83,9.31,US,$,5550242304,-3.56,,Healthcare,Diagnostics & Research,1843912,2104235.49,Mid Cap
+STNE,StoneCo Ltd,2025-04-17,12.26,0.43,3.63,1.28,11.66,US,$,3362893312,-0.85,,Technology,Software - Infrastructure,5130759,5733221.56,Mid Cap
+YETI,YETI Holdings Inc,2025-04-17,27.86,0.92,3.41,-1.2,-4.13,US,$,2306404096,2.05,,Consumer Cyclical,Leisure,2200200,1671690.74,Mid Cap
+QFIN,360 Finance Inc,2025-04-17,35.33,-1.21,-3.31,-1.4,-3.81,US,$,5227603456,5.59,0.0368,Financial Services,Credit Services,1393381,1630563.67,Mid Cap
+FSK,FS KKR Capital Corp,2025-04-17,19.56,0.43,2.25,0.89,4.77,US,$,5478090752,2.09,0.1431,Financial Services,Asset Management,0,1533943.97,Mid Cap
+INTR,Inter & Co. Inc. Class A Common Shares,2025-04-17,5.77,0.13,2.3,0.71,14.03,US,$,2537028608,0.35,0.0139,Financial Services,Banks - Regional,1890327,2152840.51,Mid Cap
+LYFT,LYFT Inc,2025-04-17,11.16,0.32,2.95,0.23,2.1,US,$,4664980480,0.06,,Technology,Software - Application,12573471,16055604.41,Mid Cap
+PR,Permian Resources Corporation,2025-04-17,12.03,0.53,4.61,1.47,13.92,US,$,9734038528,1.45,0.0499,Energy,Oil & Gas E&P,13332195,9334067.24,Mid Cap
+BBIO,BridgeBio Pharma Inc,2025-04-17,33.87,0.02,0.06,1.56,4.83,US,$,6441700864,-2.88,,Healthcare,Biotechnology,1410669,2317881.54,Mid Cap
+NVST,Envista Holdings Corp,2025-04-17,15.18,0.16,1.07,-0.36,-2.32,US,$,2613814016,-6.5,,Healthcare,Medical Instruments & Supplies,0,2505815.37,Mid Cap
+EQX,Equinox Gold Corp,2025-04-17,7.01,-0.27,-3.71,0.52,8.01,US,$,3197997056,0.75,,Basic Materials,Gold,0,5886698.95,Mid Cap
+XP,Xp Inc,2025-04-17,13.96,0.29,2.12,1.04,8.05,US,$,7502424576,1.4,0.0466,Financial Services,Capital Markets,6450500,6602542.0,Mid Cap
+IMVT,Immunovant Inc,2025-04-17,15.15,0.31,2.09,0.36,2.43,US,$,2573393920,-2.62,,Healthcare,Biotechnology,1040222,1190968.0,Mid Cap
+OVV,Ovintiv Inc,2025-04-17,33.82,0.72,2.18,2.1,6.62,US,$,8804157440,4.21,0.0355,Energy,Oil & Gas E&P,0,3182563.04,Mid Cap
+OPCH,Option Care Health Inc,2025-04-17,32.02,-0.25,-0.77,-1.67,-4.96,US,$,5259092992,1.23,,Healthcare,Medical Care Facilities,1835227,1850695.38,Mid Cap
+RVMD,Revolution Medicines Inc,2025-04-17,36.76,0.56,1.55,3.09,9.18,US,$,6834161152,-3.58,,Healthcare,Biotechnology,1274877,1463852.54,Mid Cap
+KC,Kingsoft Cloud Holdings Ltd,2025-04-17,11.035,0.055,0.5,-1.615,-12.77,US,$,3076403200,-1.1,,Technology,Software - Application,4015130,3032491.2,Mid Cap
+ZI,ZoomInfo Technologies Inc,2025-04-17,8.01,0.02,0.25,0.17,2.17,US,$,2925892864,0.08,,Technology,Software - Application,3882400,7593172.75,Mid Cap
+LEGN,Legend Biotech Corp,2025-04-17,32.8,-0.66,-1.97,1.52,4.86,US,$,6023686656,-0.96,,Healthcare,Biotechnology,1812785,1251825.13,Mid Cap
+CHX,ChampionX Corporation,2025-04-17,25.41,0.72,2.92,2.02,8.64,US,$,4848227840,1.65,0.015,Energy,Oil & Gas Equipment & Services,3021430,2669346.29,Mid Cap
+PCVX,Vaxcyte Inc,2025-04-17,30.65,1.53,5.25,2.61,9.31,US,$,3946555136,-3.8,,Healthcare,Biotechnology,1724285,1341183.03,Mid Cap
+LKNCY,Luckin Coffee,2025-04-17,30.55,0.55,1.83,2.86,10.33,US,$,8665782272,1.25,,Consumer Cyclical,Restaurants,2186500,2190989.5,Mid Cap
+NCNO,nCino Inc,2025-04-17,23.95,0.03,0.13,0.55,2.35,US,$,2788977664,-0.33,,Technology,Software - Application,2013934,1471271.48,Mid Cap
+FROG,Jfrog Ltd,2025-04-17,31.08,-0.72,-2.26,0.69,2.27,US,$,3560555776,-0.63,,Technology,Software - Application,615107,1109085.86,Mid Cap
+BNL,Broadstone Net Lease Inc,2025-04-17,16.09,0.14,0.88,1.19,7.99,US,$,3180944640,0.86,0.0721,Real Estate,REIT - Diversified,746300,1181183.41,Mid Cap
+ASAN,Asana Inc,2025-04-17,14.84,-0.2,-1.33,-0.64,-4.13,US,$,3458833152,-1.11,,Technology,Software - Application,0,2849975.14,Mid Cap
+EBC,Eastern Bankshares Inc,2025-04-17,14.73,0.01,0.07,0.46,3.22,US,$,2927204352,0.66,0.0326,Financial Services,Banks - Regional,1060296,1138797.33,Mid Cap
+ALGM,Allegro Microsystems Inc,2025-04-17,18.06,-0.87,-4.6,-3.76,-17.23,US,$,3325297152,-0.35,,Technology,Semiconductors,4399998,2657809.36,Mid Cap
+VTRS,Viatris Inc,2025-04-17,7.56,0.17,2.3,0.3,4.13,US,$,9024295936,-0.53,0.0635,Healthcare,Drug Manufacturers - Specialty & Generic,10716900,10108323.5,Mid Cap
+MP,MP Materials Corp,2025-04-17,26.35,-1.23,-4.46,2.81,11.94,US,$,4306696704,-0.57,,Basic Materials,Other Industrial Metals & Mining,0,3406423.6,Mid Cap
+CERT,Certara Inc,2025-04-17,14.15,0.62,4.58,3.64,34.63,US,$,2284885248,-0.08,,Healthcare,Health Information Services,2114174,1330513.58,Mid Cap
+UPST,Upstart Holdings Inc,2025-04-17,40.92,1.5,3.81,2.37,6.15,US,$,3890284544,-1.44,,Financial Services,Credit Services,2931094,6977097.28,Mid Cap
+AI,C3 Ai Inc,2025-04-17,19.35,0.0,0.0,-0.95,-4.68,US,$,2568499712,-2.23,,Technology,Software - Infrastructure,2365200,5083641.59,Mid Cap
+RSI,Rush Street Interactive Inc,2025-04-17,11.76,-0.07,-0.59,0.47,4.16,US,$,2684208128,0.03,,Consumer Cyclical,Gambling,0,1876151.24,Mid Cap
+DOCN,DigitalOcean Holdings Inc,2025-04-17,27.38,-0.48,-1.72,-0.84,-2.98,US,$,2520816384,0.89,,Technology,Software - Infrastructure,0,1225737.69,Mid Cap
+ACVA,ACV Auctions Inc.,2025-04-17,14.31,0.22,1.56,0.32,2.29,US,$,2549026048,-0.48,,Consumer Cyclical,Auto & Truck Dealerships,2255700,1701739.41,Mid Cap
+ALHC,Alignment Healthcare LLC,2025-04-17,18.24,-1.24,-6.37,-1.54,-7.79,US,$,3499015680,-0.67,,Healthcare,Healthcare Plans,6294406,1858797.68,Mid Cap
+COMP,Compass Inc,2025-04-17,7.29,-0.3,-3.95,-0.19,-2.54,US,$,3780995072,-0.31,,Real Estate,Real Estate Services,0,5377094.58,Mid Cap
+GENI,Genius Sports Ltd,2025-04-17,10.33,0.11,1.08,0.84,8.85,US,$,2404514048,-0.27,,Communication Services,Internet Content & Information,3471285,2914486.27,Mid Cap
+RXRX,Recursion Pharmaceuticals Inc,2025-04-17,5.5,0.18,3.38,0.99,21.95,US,$,2210950656,-1.69,,Healthcare,Biotechnology,12766775,13614816.01,Mid Cap
+GLBE,Global-E Online Ltd,2025-04-17,32.44,0.44,1.38,-1.76,-5.15,US,$,5496471552,-0.45,,Consumer Cyclical,Internet Retail,2902584,1397736.95,Mid Cap
+WFRD,Weatherford International PLC,2025-04-17,46.68,2.395,5.41,6.56,16.35,US,$,3400470016,6.75,0.0214,Energy,Oil & Gas Equipment & Services,1332500,1120049.5,Mid Cap
+OGN,Organon & Co,2025-04-17,11.12,0.3,2.77,-0.31,-2.71,US,$,2868403968,3.33,0.1007,Healthcare,Drug Manufacturers - General,0,2850248.29,Mid Cap
+VAL,Valaris Ltd,2025-04-17,31.89,1.79,5.95,1.85,6.16,US,$,2265220096,5.12,,Energy,Oil & Gas Equipment & Services,0,1577049.51,Mid Cap
+NE,Noble Corporation plc,2025-04-17,20.42,0.99,5.1,1.67,8.91,US,$,3242144512,2.96,0.0979,Energy,Oil & Gas Drilling,0,2140631.15,Mid Cap
+BZ,Kanzhun Ltd ADR,2025-04-17,13.9,-0.03,-0.22,-0.41,-2.87,US,$,6171544064,0.47,,Communication Services,Internet Content & Information,3876675,4837015.23,Mid Cap
+ATAT,Atour Lifestyle Holdings Limited American Depositary Shares,2025-04-17,23.94,0.01,0.04,0.87,3.77,US,$,3294024448,1.24,0.0188,Consumer Cyclical,Lodging,2862308,1254193.59,Mid Cap
+S,SentinelOne Inc,2025-04-17,16.82,-0.28,-1.64,-0.69,-3.94,US,$,5544830464,-0.92,,Technology,Software - Infrastructure,0,5010633.51,Mid Cap
+ZETA,Zeta Global Holdings Corp,2025-04-17,11.46,0.11,0.97,-0.25,-2.13,US,$,2724294144,-0.38,,Technology,Software - Infrastructure,2337500,5846916.64,Mid Cap
+OKLO,Oklo Inc.,2025-04-17,21.98,0.42,1.95,-0.74,-3.26,US,$,3055615488,-0.74,,Utilities,Utilities - Regulated Electric,0,12848465.05,Mid Cap
+YOU,Clear Secure Inc,2025-04-17,26.7,0.44,1.68,0.81,3.13,US,$,3555131904,1.56,0.0187,Technology,Software - Application,937400,2110321.37,Mid Cap
+MCW,"Mister Car Wash, Inc. Common Stock",2025-04-17,7.05,-0.04,-0.56,-0.26,-3.56,US,$,2289938944,0.21,,Consumer Cyclical,Auto & Truck Dealerships,772192,1479695.2,Mid Cap
+BBWI,Bath & Body Works Inc.,2025-04-17,28.42,0.92,3.35,0.8,2.9,US,$,6088303104,3.61,0.0281,Consumer Cyclical,Specialty Retail,4852700,5180784.73,Mid Cap
+JOBY,Joby Aviation,2025-04-17,5.89,0.1,1.73,-0.13,-2.16,US,$,4640242176,-0.87,,Industrials,Airports & Air Services,0,12850292.09,Mid Cap
+RNW,Renew Energy Global PLC,2025-04-17,6.21,0.13,2.14,0.42,7.25,US,$,2251938560,0.05,,Utilities,Utilities - Renewable,474566,1016015.49,Mid Cap
+CNM,Core & Main Inc,2025-04-17,49.6,0.96,1.97,1.42,2.95,US,$,9815195648,2.13,,Industrials,Industrial Distribution,0,2323134.61,Mid Cap
+ACHR,Archer Aviation Inc,2025-04-17,7.23,0.18,2.55,0.21,2.99,US,$,3922058240,-1.42,,Industrials,Aerospace & Defense,0,24013446.86,Mid Cap
+ROIV,Roivant Sciences Ltd,2025-04-17,10.15,0.13,1.3,0.5,5.18,US,$,7242522112,-1.0,,Healthcare,Biotechnology,2625469,5541726.12,Mid Cap
+ZWS,Zurn Elkay Water Solutions Corporation,2025-04-17,30.06,0.46,1.55,0.87,2.98,US,$,5073977856,0.91,0.012,Industrials,Pollution & Treatment Controls,1139900,1154302.34,Mid Cap
+LTH,Life Time Group Holdings Inc,2025-04-17,31.31,0.08,0.26,1.26,4.19,US,$,6816531456,0.74,,Consumer Cyclical,Leisure,0,1747212.86,Mid Cap
+BXSL,Blackstone Secured Lending Fund,2025-04-17,28.9,0.57,2.01,1.56,5.71,US,$,6583969280,3.45,0.1066,Financial Services,Asset Management,1260800,1091047.0,Mid Cap
+BRZE,Braze Inc,2025-04-17,29.21,0.79,2.78,-1.17,-3.85,US,$,3056300544,-1.02,,Technology,Software - Application,1005444,1262098.36,Mid Cap
+CIVI,Civitas Resources Inc,2025-04-17,28.96,0.98,3.5,2.38,8.95,US,$,2693780736,8.46,0.0691,Energy,Oil & Gas E&P,0,1530523.04,Mid Cap
+HTZ,Hertz Global Holdings Inc,2025-04-17,8.24,2.53,44.31,4.1,99.03,US,$,2537112576,-9.34,,Industrials,Rental & Leasing Services,266908117,7756268.84,Mid Cap
+IGT,International Game Technology PLC,2025-04-17,16.06,0.34,2.16,0.64,4.15,US,$,3244649728,0.57,0.0498,Consumer Cyclical,Gambling,1570700,1177770.5,Mid Cap
+CRGY,Crescent Energy Co,2025-04-17,8.38,0.25,3.08,0.95,12.79,US,$,2166003712,-0.88,0.0573,Energy,Oil & Gas Integrated,0,3401424.04,Mid Cap
+CRDO,Credo Technology Group Holding Ltd,2025-04-17,36.63,-1.09,-2.89,-1.61,-4.21,US,$,6219810304,0.03,,Technology,Semiconductors,2411708,3827517.47,Mid Cap
+RGTI,Rigetti Computing Inc,2025-04-17,8.32,0.07,0.85,-1.1,-11.68,US,$,2378088960,-1.09,,Technology,Computer Hardware,11981055,60214578.52,Mid Cap
+SOUN,SoundHound AI Inc,2025-04-17,7.82,0.06,0.77,-0.38,-4.63,US,$,3119882752,-1.04,,Technology,Software - Application,14395141,41642241.39,Mid Cap
+SG,Sweetgreen Inc,2025-04-17,18.48,-1.31,-6.62,-3.45,-15.73,US,$,2167759360,-0.79,,Consumer Cyclical,Restaurants,0,3326448.57,Mid Cap
+RITM,Rithm Capital Corp.,2025-04-17,10.14,0.12,1.2,0.57,5.96,US,$,5377394176,1.67,0.0986,Real Estate,REIT - Mortgage,0,4045949.3,Mid Cap
+RUM,Rumble Inc.,2025-04-17,7.165,0.085,1.2,-0.375,-4.97,US,$,2425409792,-1.66,,Communication Services,Internet Content & Information,1273126,3526369.35,Mid Cap
+BHVN,Biohaven Pharmaceutical Holding Co Ltd,2025-04-17,20.37,1.69,9.05,3.24,18.91,US,$,2079064192,-9.28,,Healthcare,Biotechnology,0,1021630.28,Mid Cap
+RXO,RXO Inc.,2025-04-17,13.24,0.33,2.56,-0.83,-5.9,US,$,2170181632,-2.17,,Industrials,Trucking,0,1182667.31,Mid Cap
+MBLY,Mobileye Global Inc. Class A Common Stock,2025-04-17,11.9,-0.4,-3.25,-1.3,-9.85,US,$,9659539456,-3.82,,Consumer Cyclical,Auto Parts,2682080,5906449.1,Mid Cap
+AHR,"American Healthcare REIT, Inc.",2025-04-17,30.61,0.29,0.96,1.65,5.7,US,$,4857531904,-0.29,0.0327,Real Estate,REIT - Healthcare Facilities,961900,1920257.5,Mid Cap
+BTSG,"BrightSpring Health Services, Inc. Common Stock",2025-04-17,16.6,-0.21,-1.25,-0.81,-4.65,US,$,2904568576,-0.09,,Healthcare,Health Information Services,1122800,1357412.48,Mid Cap
+GRND,Grindr Inc,2025-04-17,19.58,0.66,3.49,2.03,11.57,US,$,4077456640,-0.74,,Technology,Software - Application,1796000,1005553.68,Mid Cap
+ADT,ADT Inc,2025-04-17,7.87,-0.01,-0.13,0.18,2.34,US,$,6665850368,0.66,0.028,Industrials,Security & Protection Services,0,8074006.41,Mid Cap
+NXT,Nextracker Inc. Class A Common Stock,2025-04-17,40.7016,1.0479,2.64,2.5745,6.75,US,$,5945378304,4.05,,Technology,Solar,1168,1594818.7,Mid Cap
+AESI,Atlas Energy Solutions Inc.,2025-04-17,14.13,0.47,3.44,0.69,5.13,US,$,2343262720,0.55,0.0708,Energy,Oil & Gas Equipment & Services,0,1241163.91,Mid Cap
+OBDC,Blue Owl Capital Corporation,2025-04-17,13.85,0.32,2.37,0.76,5.81,US,$,7077987328,1.53,0.122,Financial Services,Asset Management,0,2675099.25,Mid Cap
+BGC,BGC Group Inc. ,2025-04-17,8.46,0.04,0.48,0.34,4.19,US,$,4145264640,0.25,0.0095,Financial Services,Capital Markets,2216119,2990266.84,Mid Cap
+KVYO,"Klaviyo, Inc.",2025-04-17,25.65,-0.3,-1.16,-1.72,-6.28,US,$,7005400064,-0.17,,Technology,Software - Infrastructure,0,1301304.28,Mid Cap
+ATEC,Alphatec Holdings Inc,2025-04-17,10.56,0.33,3.23,1.03,10.81,US,$,1522213376,-1.13,,Healthcare,Medical Devices,2292621,2138696.6,Small Cap
+PARR,Par Pacific Holdings Inc,2025-04-17,13.17,0.6,4.77,-0.48,-3.52,US,$,715801344,-0.59,,Energy,Oil & Gas Refining & Marketing,0,1132699.87,Small Cap
+ORC,Orchid Island Capital Inc.,2025-04-17,6.55,0.16,2.5,0.5,8.26,US,$,705258176,0.57,0.2198,Real Estate,REIT - Mortgage,0,2552918.1,Small Cap
+AVXL,Anavex Life Sciences Corp,2025-04-17,8.95,0.11,1.24,0.41,4.8,US,$,761324544,-0.55,,Healthcare,Biotechnology,351348,1260364.19,Small Cap
+CSTM,Constellium Nv,2025-04-17,8.6,0.07,0.82,0.68,8.59,US,$,1229094912,0.38,,Basic Materials,Aluminum,0,1409511.04,Small Cap
+SBLK,Star Bulk Carriers Corp,2025-04-17,13.79,0.24,1.77,0.62,4.71,US,$,1615195136,2.8,0.0261,Industrials,Marine Shipping,1002217,1918214.39,Small Cap
+DVAX,Dynavax Technologies Corporation,2025-04-17,10.31,-0.34,-3.19,-0.66,-6.02,US,$,1279172096,0.2,,Healthcare,Drug Manufacturers - Specialty & Generic,2950857,2177272.24,Small Cap
+IVR,Invesco Mortgage Capital Inc,2025-04-17,6.66,0.21,3.26,0.33,5.21,US,$,434719488,0.65,0.2042,Real Estate,REIT - Mortgage,0,1546696.26,Small Cap
+CWH,Camping World Holdings Inc,2025-04-17,12.01,0.33,2.83,-0.93,-7.19,US,$,751450112,-0.8,0.0416,Consumer Cyclical,Auto & Truck Dealerships,0,1373958.29,Small Cap
+OI,O-I Glass Inc,2025-04-17,10.95,0.13,1.2,0.68,6.62,US,$,1693625472,-0.69,,Consumer Cyclical,Packaging & Containers,0,1528657.65,Small Cap
+DYN,Dyne Therapeutics Inc,2025-04-17,8.17,0.34,4.34,1.19,17.05,US,$,928389760,-3.37,,Healthcare,Biotechnology,1315688,1528923.82,Small Cap
+TROX,Tronox Holdings PLC,2025-04-17,5.25,0.07,1.35,0.22,4.37,US,$,831925504,-0.31,0.0952,Basic Materials,Chemicals,0,1400534.66,Small Cap
+AAOI,Applied Opt,2025-04-17,10.66,0.23,2.21,-1.06,-9.04,US,$,535662848,-4.5,,Technology,Communication Equipment,2060702,3413112.23,Small Cap
+FL,Foot Locker Inc,2025-04-17,11.9,0.78,7.01,-0.48,-3.88,US,$,1129957376,0.19,,Consumer Cyclical,Apparel Retail,0,3504321.32,Small Cap
+KSS,Kohl's Corporation,2025-04-17,6.48,0.35,5.71,-0.36,-5.26,US,$,721379520,0.98,0.0772,Consumer Cyclical,Department Stores,0,8816720.37,Small Cap
+CENX,Century Aluminum Company,2025-04-17,15.59,-0.2,-1.27,0.95,6.49,US,$,1438852480,3.27,,Basic Materials,Aluminum,927327,1415327.05,Small Cap
+HE,Hawaiian Electric Industries Inc,2025-04-17,10.45,0.1,0.97,1.02,10.82,US,$,1802562304,-10.42,,Utilities,Utilities - Regulated Electric,0,3718610.57,Small Cap
+SBH,Sally Beauty Holdings Inc,2025-04-17,8.1,0.09,1.12,-0.25,-2.99,US,$,825827456,1.66,,Consumer Cyclical,Specialty Retail,0,1830612.94,Small Cap
+DX,Dynex Capital Inc,2025-04-17,11.67,0.08,0.69,0.54,4.85,US,$,1122678528,1.49,0.1748,Real Estate,REIT - Mortgage,0,2398755.29,Small Cap
+VSAT,ViaSat Inc,2025-04-17,8.49,0.32,3.92,0.23,2.78,US,$,1096228736,-3.13,,Technology,Communication Equipment,1767600,2909263.06,Small Cap
+BTU,Peabody Energy Corp,2025-04-17,12.84,0.61,4.99,1.61,14.34,US,$,1560920320,2.73,0.0234,Energy,Thermal Coal,0,3362543.91,Small Cap
+FSM,Fortuna Silver Mines Inc,2025-04-17,6.37,-0.13,-2.0,0.14,2.25,US,$,1949328256,0.41,,Basic Materials,Gold,0,9799106.74,Small Cap
+BLMN,Bloomin Brands Inc,2025-04-17,7.95,0.44,5.86,1.03,14.88,US,$,675199872,-0.61,0.1094,Consumer Cyclical,Restaurants,2307250,2022669.06,Small Cap
+PZZA,Papa John's International Inc,2025-04-17,31.16,0.12,0.39,-1.29,-3.98,US,$,1019221760,2.54,0.0591,Consumer Cyclical,Restaurants,805811,1271343.13,Small Cap
+HLF,Herbalife Nutrition Ltd,2025-04-17,6.44,0.2,3.21,-0.34,-5.01,US,$,652636032,2.5,,Consumer Defensive,Packaged Foods,0,2252278.72,Small Cap
+MOMO,Hello Group Inc,2025-04-17,5.5,0.21,3.97,0.27,5.16,US,$,902511488,0.75,0.0569,Communication Services,Internet Content & Information,1496158,1245993.34,Small Cap
+PCRX,"Pacira BioSciences, Inc.",2025-04-17,24.65,0.18,0.74,0.96,4.05,US,$,1140708352,-2.15,,Healthcare,Drug Manufacturers - Specialty & Generic,450098,1005235.4,Small Cap
+PBF,PBF Energy Inc,2025-04-17,15.28,0.39,2.62,0.34,2.28,US,$,1767101440,-4.6,0.072,Energy,Oil & Gas Refining & Marketing,0,2504011.22,Small Cap
+INOD,Innodata Inc,2025-04-17,33.04,-1.74,-5.0,-3.94,-10.65,US,$,1034142144,0.89,,Technology,Information Technology Services,907990,1378928.42,Small Cap
+DAN,Dana Inc,2025-04-17,11.76,0.66,5.95,1.13,10.63,US,$,1713714304,-0.39,0.034,Consumer Cyclical,Auto Parts,0,1735788.84,Small Cap
+NVAX,Novavax Inc,2025-04-17,6.0,-0.2,-3.23,0.57,10.5,US,$,965064000,-1.23,,Healthcare,Biotechnology,4870672,5564058.65,Small Cap
+CSIQ,Canadian Solar Inc,2025-04-17,7.46,0.28,3.9,0.25,3.47,US,$,493664768,0.54,,Technology,Solar,1241408,1897694.84,Small Cap
+DK,Delek US Energy Inc,2025-04-17,12.89,0.72,5.92,0.81,6.71,US,$,797454080,-9.98,0.0791,Energy,Oil & Gas Refining & Marketing,0,1288002.41,Small Cap
+VET,Vermilion Energy Inc.,2025-04-17,6.52,0.2,3.16,0.78,13.59,US,$,1006427200,-0.22,0.0574,Energy,Oil & Gas E&P,0,1187735.45,Small Cap
+RES,RPC Inc,2025-04-17,5.03,0.17,3.5,0.37,7.94,US,$,1086746624,0.43,0.0318,Energy,Oil & Gas Equipment & Services,1677100,1739256.0,Small Cap
+BGS,B&G Foods Inc,2025-04-17,6.62,0.5,8.17,0.84,14.53,US,$,523894880,-3.18,0.1148,Consumer Defensive,Packaged Foods,0,1472297.1,Small Cap
+ARCO,Arcos Dorados Holdings Inc,2025-04-17,7.46,0.45,6.42,0.4,5.67,US,$,1571545984,0.71,0.0322,Consumer Cyclical,Restaurants,0,1361082.55,Small Cap
+QURE,Uniqure NV,2025-04-17,13.0,3.61,38.45,4.43,51.69,US,$,702999680,-4.92,,Healthcare,Biotechnology,14456116,2043768.14,Small Cap
+DHT,DHT Holdings Inc,2025-04-17,10.42,0.34,3.37,0.58,5.89,US,$,1673014400,1.12,0.0653,Energy,Oil & Gas Midstream,0,1923789.25,Small Cap
+MFA,MFA Financial Inc,2025-04-17,8.98,0.35,4.06,0.8,9.78,US,$,920665472,0.82,0.1604,Real Estate,REIT - Mortgage,0,1046952.68,Small Cap
+ARR,ARMOUR Residential REIT Inc,2025-04-17,14.3,0.33,2.36,0.3853,2.77,US,$,1143542400,-0.51,0.2014,Real Estate,REIT - Mortgage,2387500,1981952.5,Small Cap
+TRIP,TripAdvisor Inc,2025-04-17,11.72,-0.05,-0.42,0.28,2.45,US,$,1645277056,0.04,,Consumer Cyclical,Travel Services,1598001,2381461.8,Small Cap
+BKD,Brookdale Senior Living Inc,2025-04-17,6.24,-0.07,-1.11,0.41,7.03,US,$,1249179264,-0.89,,Healthcare,Medical Care Facilities,0,2439781.67,Small Cap
+TWO,Two Harbors Investments Corp,2025-04-17,10.97,0.16,1.48,0.25,2.33,US,$,1141132288,2.37,0.1641,Real Estate,REIT - Mortgage,0,1227914.8,Small Cap
+CAPR,Capricor Therapeutics Inc,2025-04-17,11.25,1.61,16.7,2.37,26.69,US,$,513865120,-1.15,,Healthcare,Biotechnology,1510834,1725495.77,Small Cap
+AMSC,American Superconductor Corporation,2025-04-17,18.41,0.23,1.27,0.95,5.44,US,$,726453056,0.09,,Industrials,Specialty Industrial Machinery,333285,1148648.39,Small Cap
+SFL,SFL Corporation Ltd,2025-04-17,7.8,0.14,1.83,0.5,6.85,US,$,1044927040,1.01,0.1385,Industrials,Marine Shipping,0,1108740.12,Small Cap
+PEB,Pebblebrook Hotel Trust,2025-04-17,8.7,0.2,2.35,0.2,2.35,US,$,1032559488,-0.39,0.0046,Real Estate,REIT - Hotel & Motel,0,2005248.64,Small Cap
+WWW,Wolverine World Wide Inc,2025-04-17,10.79,0.25,2.37,-0.35,-3.14,US,$,874365504,0.58,0.0371,Consumer Cyclical,Footwear & Accessories,1127700,1308253.25,Small Cap
+HLX,Helix Energy Solutions Group Inc,2025-04-17,6.84,0.32,4.91,0.52,8.23,US,$,1036465216,0.36,,Energy,Oil & Gas Equipment & Services,0,1753643.87,Small Cap
+PFLT,PennantPark Floating Rate Capital Ltd,2025-04-17,9.71,0.23,2.43,0.2913,3.09,US,$,854051840,1.37,0.1267,Financial Services,Asset Management,0,1053497.93,Small Cap
+CRMD,CorMedix Inc,2025-04-17,7.67,0.15,1.99,0.83,12.13,US,$,499944416,-0.3,,Healthcare,Biotechnology,2024635,1138141.36,Small Cap
+QDEL,Quidel Corporation,2025-04-17,25.17,-0.1,-0.4,-1.25,-4.73,US,$,1697832320,-30.54,,Healthcare,Medical Devices,938612,1000684.06,Small Cap
+FIVN,Five9 Inc,2025-04-17,22.32,-0.3,-1.33,-0.91,-3.92,US,$,1701748224,-0.17,,Technology,Software - Infrastructure,1096803,1673361.36,Small Cap
+RLJ,RLJ Lodging Trust,2025-04-17,6.96,0.2,2.96,0.18,2.65,US,$,1061246912,0.27,0.0862,Real Estate,REIT - Hotel & Motel,0,1862727.07,Small Cap
+CVI,CVR Energy Inc,2025-04-17,18.39,0.43,2.39,1.6,9.53,US,$,1848765056,0.06,0.1088,Energy,Oil & Gas Refining & Marketing,0,1287033.53,Small Cap
+OCUL,Ocular Therapeutix Inc,2025-04-17,7.31,0.14,1.95,0.905,14.13,US,$,1162450816,-1.22,,Healthcare,Biotechnology,1633181,1222597.18,Small Cap
+SAGE,Sage Therapeutic,2025-04-17,7.43,0.06,0.81,0.52,7.53,US,$,456803072,-6.59,,Healthcare,Biotechnology,616535,1202213.11,Small Cap
+VNET,VNET Group Inc DRC,2025-04-17,5.02,0.28,5.91,-0.65,-11.46,US,$,1340972544,0.02,,Technology,Information Technology Services,7828600,4786899.49,Small Cap
+WB,Weibo Corp,2025-04-17,7.61,0.07,0.93,0.27,3.68,US,$,1912880128,1.16,0.1078,Communication Services,Internet Content & Information,1754000,1755552.25,Small Cap
+HIMX,Himax Technologies Inc,2025-04-17,6.47,0.02,0.31,0.32,5.2,US,$,1131687040,0.46,0.0448,Technology,Semiconductors,687825,2001706.68,Small Cap
+PLAY,Dave & Buster’s Entertainment,2025-04-17,19.98,1.69,9.24,2.365,13.43,US,$,689615680,1.46,,Communication Services,Entertainment,1828450,1491399.29,Small Cap
+ASPN,Aspen Aerogels Inc,2025-04-17,5.21,0.04,0.77,0.11,2.16,US,$,427766016,0.17,,Industrials,Building Products & Equipment,0,2019116.55,Small Cap
+ADPT,Adaptive Biotechnologies Corp,2025-04-17,7.33,-0.16,-2.14,-0.395,-5.11,US,$,1089106048,-1.08,,Healthcare,Biotechnology,1270322,1455906.16,Small Cap
+JKS,JinkoSolar Holding Company Limited,2025-04-17,16.2,0.42,2.66,2.32,16.71,US,$,798838208,-0.68,0.1852,Technology,Solar,0,1110268.03,Small Cap
+DQ,Daqo New Energy Corp ADR,2025-04-17,13.93,-0.2,-1.42,0.29,2.13,US,$,916036800,-26.1,,Technology,Semiconductor Equipment & Materials,0,1050672.28,Small Cap
+JPC,Nuveen Preferred Income Opportunities Closed Fund,2025-04-17,7.36,0.06,0.82,0.2862,4.05,US,$,859466300,,0.1038,Financial Services,Asset Management,0,1089425.31,Small Cap
+LC,LendingClub Corp,2025-04-17,9.5,0.12,1.28,0.28,3.04,US,$,1077148032,0.45,,Financial Services,Banks - Regional,0,1687158.28,Small Cap
+EWA,iShares MSCI Australia ETF,2025-04-17,23.61,0.19,0.81,1.26,5.64,US,$,1572828032,,0.0246,,,2614100,1686673.5,Small Cap
+ILF,iShares Latin America 40 ETF,2025-04-17,23.44,0.51,2.22,1.36,6.16,US,$,1267284992,,0.0288,,,564400,1265359.36,Small Cap
+NVCR,Novocure Ltd,2025-04-17,15.58,-0.25,-1.58,-0.5,-3.11,US,$,1712475648,-1.56,,Healthcare,Medical Devices,705577,1086165.28,Small Cap
+EVH,Evolent Health Inc,2025-04-17,8.96,-0.27,-2.93,-0.93,-9.4,US,$,1044655360,-0.81,,Healthcare,Health Information Services,0,2498557.24,Small Cap
+RUN,Sunrun Inc,2025-04-17,6.85,0.325,4.98,0.82,13.6,US,$,1549538432,-12.81,,Technology,Solar,11274599,10485050.93,Small Cap
+SEDG,SolarEdge Technologies Inc,2025-04-17,12.64,0.15,1.2,1.06,9.15,US,$,743010816,-31.64,,Technology,Solar,1828691,4422175.84,Small Cap
+CC,Chemours Co,2025-04-17,11.36,0.34,3.09,0.55,5.09,US,$,1697649664,0.57,0.088,Basic Materials,Specialty Chemicals,0,1957644.13,Small Cap
+GNL,"Global Net Lease, Inc.",2025-04-17,7.58,0.05,0.66,0.84,12.46,US,$,1752723328,-0.76,0.1003,Real Estate,REIT - Diversified,0,1538965.54,Small Cap
+KURA,Kura Oncology Inc,2025-04-17,5.9,0.15,2.61,0.27,4.8,US,$,476587840,-2.02,,Healthcare,Biotechnology,961043,1251077.13,Small Cap
+GOGL,Golden Ocean Group Ltd,2025-04-17,7.16,0.13,1.85,0.31,4.53,US,$,1427546496,1.12,0.0838,Industrials,Marine Shipping,1798450,2306792.07,Small Cap
+NTLA,Intellia Therapeutics Inc,2025-04-17,7.23,0.37,5.39,0.46,6.79,US,$,748427904,-5.25,,Healthcare,Biotechnology,2869982,2515942.91,Small Cap
+SNDX,Syndax Pharmaceuticals Inc,2025-04-17,11.54,0.49,4.43,1.02,9.7,US,$,992947776,-3.72,,Healthcare,Biotechnology,1947221,1708925.11,Small Cap
+TDOC,Teladoc Inc,2025-04-17,6.83,-0.07,-1.01,-0.41,-5.66,US,$,1197148672,-5.87,,Healthcare,Health Information Services,0,6315776.07,Small Cap
+ADNT,Adient PLC,2025-04-17,11.43,0.48,4.38,0.84,7.93,US,$,959350848,-0.02,,Consumer Cyclical,Auto Parts,0,1471003.42,Small Cap
+AUPH,Aurinia Pharmaceuticals Inc,2025-04-17,7.75,0.08,1.04,0.41,5.59,US,$,1064377344,0.04,,Healthcare,Biotechnology,929343,1366314.74,Small Cap
+WVE,Wave Life Sciences Ltd,2025-04-17,5.92,0.08,1.37,0.44,8.03,US,$,908637120,-0.7,,Healthcare,Biotechnology,948000,1259067.37,Small Cap
+PUMP,ProPetro Holding Corp,2025-04-17,5.42,0.23,4.43,0.49,9.94,US,$,562509312,-1.31,,Energy,Oil & Gas Equipment & Services,0,1512847.84,Small Cap
+WTTR,Select Energy Services Inc,2025-04-17,8.56,0.32,3.88,0.56,7.0,US,$,1025761984,0.3,0.0327,Energy,Oil & Gas Equipment & Services,1012700,1085594.24,Small Cap
+AVDL,Avadel Pharmaceuticals PLC,2025-04-17,8.03,-0.12,-1.47,0.9,12.62,US,$,775934080,-0.51,,Healthcare,Drug Manufacturers - Specialty & Generic,1099753,1177588.0,Small Cap
+PK,Park Hotels & Resorts Inc,2025-04-17,9.83,0.28,2.93,0.4,4.24,US,$,1984323072,1.01,0.1017,Real Estate,REIT - Hotel & Motel,0,3396745.05,Small Cap
+SUPV,Grupo Supervielle SA,2025-04-17,15.36,0.2,1.32,3.55,30.06,US,$,1359539584,1.19,0.0111,Financial Services,Banks - Regional,0,1183989.94,Small Cap
+BCRX,BioCryst Pharmaceuticals Inc,2025-04-17,7.4,0.18,2.49,0.99,15.44,US,$,1546304000,-0.43,,Healthcare,Drug Manufacturers - Specialty & Generic,3353921,2528681.24,Small Cap
+GRPN,Groupon Inc,2025-04-17,18.99,0.03,0.16,1.08,6.03,US,$,756008960,-1.51,,Communication Services,Internet Content & Information,1205630,1384733.66,Small Cap
+REAL,TheRealReal Inc,2025-04-17,5.38,0.25,4.87,0.24,4.67,US,$,598508864,-1.24,,Consumer Cyclical,Luxury Goods,1805915,2749324.05,Small Cap
+RDFN,Redfin Corp,2025-04-17,8.44,-0.135,-1.57,0.24,2.93,US,$,1066723136,-1.36,,Real Estate,Real Estate Services,2704200,6678131.8,Small Cap
+ACMR,Acm Research Inc,2025-04-17,19.36,-0.37,-1.88,0.94,5.1,US,$,1222190976,1.53,,Technology,Semiconductor Equipment & Materials,1252519,1526512.1,Small Cap
+EXPI,eXp World Holdings Inc,2025-04-17,8.84,-0.14,-1.56,-0.33,-3.6,US,$,1343768448,-0.11,0.0226,Real Estate,Real Estate Services,1054628,1038370.9,Small Cap
+RCKT,Rocket Pharmaceuticals Inc,2025-04-17,6.33,0.18,2.93,1.39,28.14,US,$,674967872,-2.73,,Healthcare,Biotechnology,2203157,1390229.51,Small Cap
+LBRT,Liberty Oilfield Services Inc,2025-04-17,12.08,0.65,5.69,1.38,12.9,US,$,1961018880,1.51,0.0265,Energy,Oil & Gas Equipment & Services,0,2804787.27,Small Cap
+LX,Lexinfintech Holdings Ltd,2025-04-17,6.99,0.01,0.14,0.3053,4.57,US,$,1149246720,0.88,0.026,Financial Services,Credit Services,2329274,3370718.39,Small Cap
+TRMD,Torm PLC Class A,2025-04-17,15.6,0.32,2.09,0.36,2.36,US,$,1525224576,6.36,0.1538,Energy,Oil & Gas Midstream,530097,1014817.55,Small Cap
+TALO,Talos Energy,2025-04-17,7.38,0.3,4.24,0.53,7.74,US,$,1328842880,-0.44,,Energy,Oil & Gas E&P,0,2031028.25,Small Cap
+BHC,Bausch Health Companies Inc,2025-04-17,5.1,0.6,13.33,0.73,16.7,US,$,1884669312,-0.13,,Healthcare,Drug Manufacturers - Specialty & Generic,0,2662754.1,Small Cap
+LQDA,Liquidia Technologies Inc,2025-04-17,13.72,0.04,0.29,1.33,10.73,US,$,1170295424,-1.66,,Healthcare,Biotechnology,597970,1007418.78,Small Cap
+CWK,Cushman & Wakefield plc,2025-04-17,8.28,0.13,1.6,0.29,3.63,US,$,1915006592,0.56,,Real Estate,Real Estate Services,0,1924227.49,Small Cap
+QUBT,Quantum Computing Inc,2025-04-17,6.41,0.0,0.0,-0.44,-6.42,US,$,879740352,-0.73,,Technology,Computer Hardware,4240374,20560694.86,Small Cap
+SONO,Sonos Inc,2025-04-17,8.07,0.37,4.81,-0.21,-2.54,US,$,960999744,-0.55,,Technology,Consumer Electronics,2171638,2025854.23,Small Cap
+ARVN,Arvinas Inc,2025-04-17,8.6,0.95,12.42,1.98,29.91,US,$,591438400,-2.77,,Healthcare,Biotechnology,3187269,1182539.31,Small Cap
+GTX,Garrett Motion Inc,2025-04-17,9.02,0.08,0.89,0.33,3.8,US,$,1839457792,1.26,0.0266,Consumer Cyclical,Auto Parts,1904858,1025391.97,Small Cap
+SITC,Site Centers Corp,2025-04-17,11.9,0.25,2.15,0.51,4.48,US,$,625767424,9.65,0.1748,Real Estate,REIT - Retail,562436,1014411.58,Small Cap
+CPRI,Capri Holdings Ltd,2025-04-17,13.69,0.42,3.17,-0.94,-6.43,US,$,1614187904,-8.57,,Consumer Cyclical,Luxury Goods,0,3520558.23,Small Cap
+NFE,New Fortress Energy LLC,2025-04-17,5.69,0.15,2.71,-0.12,-2.07,US,$,1557762688,-1.25,0.0703,Utilities,Utilities - Regulated Gas,5321367,5462391.61,Small Cap
+TRVI,Trevi Therapeutics  Inc,2025-04-17,6.07,-0.03,-0.49,0.79,14.96,US,$,586860992,-0.47,,Healthcare,Biotechnology,710037,1310403.7,Small Cap
+INMD,InMode Ltd,2025-04-17,14.92,0.01,0.07,0.82,5.82,US,$,1012602496,2.25,,Healthcare,Medical Devices,871724,1163708.75,Small Cap
+MNMD,Mind Medicine Inc,2025-04-17,5.77,0.31,5.68,0.63,12.26,US,$,434875680,-1.54,,Healthcare,Biotechnology,1168665,1366604.54,Small Cap
+GO,Grocery Outlet Holding Corp,2025-04-17,15.16,0.52,3.55,0.95,6.69,US,$,1475945856,0.4,,Consumer Defensive,Grocery Stores,3190938,2251363.9,Small Cap
+RCAT,Red Cat Holdings Inc,2025-04-17,5.13,-0.05,-0.97,-0.67,-11.55,US,$,464336352,-0.51,,Technology,Computer Hardware,2978640,5125303.68,Small Cap
+TXG,10X Genomics Inc,2025-04-17,7.51,-0.52,-6.48,-0.19,-2.47,US,$,924736384,-1.52,,Healthcare,Health Information Services,6488638,2333113.63,Small Cap
+CRNC,Cerence Inc,2025-04-17,7.59,0.25,3.41,0.39,5.42,US,$,327880416,-15.27,,Technology,Software - Application,613900,3591285.78,Small Cap
+VIR,Vir Biotechnology Inc,2025-04-17,5.5,0.065,1.2,0.22,4.17,US,$,754286528,-3.83,,Healthcare,Biotechnology,713358,1362526.61,Small Cap
+PGNY,Progyny Inc,2025-04-17,21.44,0.04,0.19,-0.82,-3.68,US,$,1836730496,0.57,,Healthcare,Healthcare Plans,1236518,1864147.16,Small Cap
+ETNB,89bio Inc,2025-04-17,6.06,0.17,2.89,1.065,21.32,US,$,884663040,-3.51,,Healthcare,Biotechnology,1020007,1376005.7,Small Cap
+AHCO,Adapthealth Corp,2025-04-17,7.79,-0.03,-0.38,-1.17,-13.06,US,$,1050614016,0.61,,Healthcare,Medical Devices,1527554,1263195.65,Small Cap
+ARQT,Arcutis Biotherapeutics Inc,2025-04-17,13.01,0.05,0.39,-0.43,-3.2,US,$,1543480448,-1.16,,Healthcare,Biotechnology,1598382,2252467.97,Small Cap
+LMND,Lemonade Inc,2025-04-17,26.78,-0.14,-0.52,0.67,2.57,US,$,1950122240,-2.85,,Financial Services,Insurance - Property & Casualty,0,2038828.29,Small Cap
+MGNI,Magnite Inc,2025-04-17,11.13,1.23,12.42,1.39,14.27,US,$,1573514880,0.16,,Communication Services,Advertising Agencies,9054426,2133013.93,Small Cap
+NNOX,Nano X Imaging Ltd,2025-04-17,5.2,0.7,15.56,0.81,18.45,US,$,331562400,-0.91,,Healthcare,Medical Devices,4191082,1940456.56,Small Cap
+TVTX,Travere Therapeutics Inc,2025-04-17,14.92,0.35,2.4,1.43,10.6,US,$,1324473728,-4.07,,Healthcare,Biotechnology,1101182,1587046.21,Small Cap
+VRDN,Viridian Therapeutics Inc,2025-04-17,13.13,0.48,3.79,1.72,15.07,US,$,1069898048,-3.07,,Healthcare,Biotechnology,803097,1247070.14,Small Cap
+ZIM,ZIM Integrated Shipping Services Ltd,2025-04-17,13.79,0.31,2.3,1.19,9.44,US,$,1661115776,17.82,0.5178,Industrials,Marine Shipping,0,6125497.6,Small Cap
+COUR,Coursera Inc,2025-04-17,7.31,0.29,4.13,0.7,10.59,US,$,1178642432,-0.51,,Consumer Defensive,Education & Training Services,0,2212185.9,Small Cap
+EWTX,Edgewise Therapeutics Inc,2025-04-17,13.45,0.42,3.22,1.88,16.25,US,$,1414146432,-1.45,,Healthcare,Biotechnology,990800,1232879.08,Small Cap
+FLYW,Flywire Corp,2025-04-17,8.88,0.05,0.57,0.46,5.46,US,$,1097505792,0.02,,Technology,Software - Infrastructure,2281740,1675405.6,Small Cap
+HUT,Hut 8 Corp. Common Stock,2025-04-17,11.19,0.11,0.99,-0.54,-4.6,US,$,1162148608,3.4,,Financial Services,Capital Markets,4259679,5535543.34,Small Cap
+CXM,Sprinklr Inc,2025-04-17,7.1,-0.04,-0.56,-0.53,-6.95,US,$,1816790528,0.44,,Technology,Software - Application,0,1981974.57,Small Cap
+DBRG,Digitalbridge Group Inc,2025-04-17,7.94,0.17,2.19,0.59,8.03,US,$,1482818816,0.18,0.005,Financial Services,Asset Management,0,2541710.88,Small Cap
+ENVX,Enovix Corp,2025-04-17,6.16,0.33,5.66,0.24,4.05,US,$,1178247808,-1.27,,Industrials,Electrical Equipment & Parts,4632864,6087386.27,Small Cap
