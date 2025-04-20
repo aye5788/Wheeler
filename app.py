@@ -39,13 +39,19 @@ def fetch_options(symbol, opt_type="put", limit=20):
         st.warning(f"Error fetching {symbol}: {e}")
         return pd.DataFrame()
 
-def calculate_metrics(df):
+def calculate_metrics(df, opt_type):
     today = pd.Timestamp(datetime.utcnow().date())
     df['exp_date'] = pd.to_datetime(df['attributes.exp_date'])
     df['DTE'] = (df['exp_date'] - today).dt.days
     df['mid'] = (df['attributes.bid'] + df['attributes.ask']) / 2
     df['capital_required'] = df['attributes.strike'] * 100
-    df['breakeven'] = df['attributes.strike'] - df['mid'] if df['attributes.type'][0] == 'put' else df['attributes.strike'] + df['mid']
+
+    # ✅ Use opt_type passed in from above
+    if opt_type == 'put':
+        df['breakeven'] = df['attributes.strike'] - df['mid']
+    else:
+        df['breakeven'] = df['attributes.strike'] + df['mid']
+
     df['annualized_yield'] = (df['mid'] / df['attributes.strike']) * (365 / df['DTE'])
     df['yield_per_dollar'] = df['mid'] / df['capital_required']
     return df
@@ -120,7 +126,7 @@ if st.button(f"📡 Run {opt_type.upper()} Screener", key=f"run_btn_{opt_type}")
             st.write(f"📡 Fetching {symbol}...")
             raw_df = fetch_options(symbol, opt_type=opt_type)
             if not raw_df.empty:
-                processed = calculate_metrics(raw_df)
+                processed = calculate_metrics(raw_df, opt_type=opt_type)
                 filtered = apply_filters(processed, user_settings)
                 results.append(filtered)
             else:
