@@ -43,20 +43,27 @@ def calculate_metrics(df, opt_type):
     today = pd.Timestamp(datetime.utcnow().date())
     df['exp_date'] = pd.to_datetime(df['attributes.exp_date'])
     df['DTE'] = (df['exp_date'] - today).dt.days
+
+    # Fill missing bid/ask to avoid NaN mid
+    df['attributes.bid'] = df['attributes.bid'].fillna(0)
+    df['attributes.ask'] = df['attributes.ask'].fillna(0)
+
     df['mid'] = (df['attributes.bid'] + df['attributes.ask']) / 2
     df['capital_required'] = df['attributes.strike'] * 100
 
-    # ✅ Use opt_type passed in from above
     if opt_type == 'put':
         df['breakeven'] = df['attributes.strike'] - df['mid']
     else:
         df['breakeven'] = df['attributes.strike'] + df['mid']
 
-    df['annualized_yield'] = (df['mid'] / df['attributes.strike']) * (365 / df['DTE'])
+    df['annualized_yield'] = (df['mid'] / df['attributes.strike']) * (365 / df['DTE'].clip(lower=1))
     df['yield_per_dollar'] = df['mid'] / df['capital_required']
     return df
 
 def apply_filters(df, user_settings):
+    # ✅ TEMP: show raw filtering impact
+    st.write("🧠 Running filters on data of shape:", df.shape)
+
     return df[
         (df['mid'] >= user_settings['min_bid']) &
         (df['DTE'] >= user_settings['min_dte']) &
@@ -76,11 +83,10 @@ tickers = load_tickers()
 selected_tab = st.radio("📌 Select Strategy", ["Cash-Secured Puts", "Covered Calls"], horizontal=True)
 opt_type = "put" if selected_tab == "Cash-Secured Puts" else "call"
 
-# Sidebar filters — rendered once and uniquely keyed
 with st.sidebar:
     st.header("🔧 Filters")
     max_tickers = st.slider("Number of tickers to scan", 5, 50, 10, key=f"max_tickers_{opt_type}")
-    min_bid = st.number_input("Minimum Bid ($)", value=0.30, step=0.05, key=f"min_bid_{opt_type}")
+    min_bid = st.number_input("Minimum Bid ($)", value=0.05, step=0.01, key=f"min_bid_{opt_type}")
     min_delta = st.slider("Min Delta", 0.05, 0.5, 0.15, key=f"min_delta_{opt_type}")
     max_delta = st.slider("Max Delta", 0.2, 0.7, 0.4, key=f"max_delta_{opt_type}")
     min_dte = st.slider("Min DTE", 5, 30, 10, key=f"min_dte_{opt_type}")
@@ -110,7 +116,6 @@ user_settings = {
     "max_capital": max_capital
 }
 
-# UI and logic
 st.markdown(f"### {'📉' if opt_type == 'put' else '📈'} {selected_tab}")
 single_ticker = st.text_input("📍 Scan a single ticker (optional)", placeholder="e.g. AAPL",
                               key=f"single_ticker_{opt_type}").strip().upper()
@@ -125,8 +130,15 @@ if st.button(f"📡 Run {opt_type.upper()} Screener", key=f"run_btn_{opt_type}")
         for symbol in symbols_to_scan:
             st.write(f"📡 Fetching {symbol}...")
             raw_df = fetch_options(symbol, opt_type=opt_type)
+            st.write("🔍 Raw data:")
+            st.dataframe(raw_df.head())
+
             if not raw_df.empty:
                 processed = calculate_metrics(raw_df, opt_type=opt_type)
+                st.write("🧠 After metric calculation:")
+                st.dataframe(processed.head())
+                st.write("📋 Columns:", processed.columns.tolist())
+
                 filtered = apply_filters(processed, user_settings)
                 results.append(filtered)
             else:
@@ -169,5 +181,3 @@ if st.button(f"📡 Run {opt_type.upper()} Screener", key=f"run_btn_{opt_type}")
                     st.pyplot(generate_pl_chart(row['strike'], row['mid'], opt_type=opt_type))
         else:
             st.warning(f"No {opt_type.upper()} candidates met your filter criteria.")
-
-
