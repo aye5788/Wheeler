@@ -1,120 +1,125 @@
 import streamlit as st
 import pandas as pd
 import requests
-import math
 import time
-from utils import (
-    get_filtered_universe,
-    fetch_option_chain,
-    apply_filters,
-    calculate_metrics,
-    plot_trade_pnl_chart
-)
+from datetime import datetime
+from utils import calculate_pop, calculate_ev, generate_pl_chart
 
+# === Load Filtered Ticker Universe ===
+@st.cache_data
+def load_filtered_tickers():
+    return pd.read_csv("filtered_universe_for_csp.csv")
+
+# === API Setup ===
+API_KEY = st.secrets["EODHD_API_KEY"]
+BASE_URL = "https://eodhd.com/api/mp/unicornbay/options/contracts"
+
+# === UI Layout ===
 st.set_page_config(page_title="Wheel Strategy Screener", layout="wide")
-st.title("📊 Wheel Strategy Screener")
+st.title("📉 Wheel Strategy Screener")
 
-# Strategy selection
-opt_type = st.radio("Select Strategy", ["Cash-Secured Puts", "Covered Calls"], horizontal=True)
-opt_type = "put" if opt_type == "Cash-Secured Puts" else "call"
+# === Strategy Selection ===
+opt_type = st.radio("🔘 Select Strategy", ["Cash-Secured Puts", "Covered Calls"], horizontal=True)
+opt_type = "put" if "Put" in opt_type else "call"
 
-# Ticker override
+# === Sidebar Filters ===
+st.sidebar.header("🔧 Filters")
+min_bid = st.sidebar.number_input("Minimum Bid ($)", value=0.30, step=0.01)
+min_delta = st.sidebar.slider("Min Delta", 0.05, 0.50, 0.15)
+max_delta = st.sidebar.slider("Max Delta", 0.20, 0.70, 0.40)
+min_dte = st.sidebar.slider("Min DTE", 5, 30, 10)
+max_dte = st.sidebar.slider("Max DTE", 15, 90, 60)
+max_capital = st.sidebar.number_input("Max Capital per Contract ($)", value=1000.0, step=50.0)
+sort_key = st.sidebar.selectbox("Sort by", ["Highest Annualized Yield", "Lowest EV", "Highest PoP"])
+
+# === Ticker Input ===
 single_ticker = st.text_input("🔐 Scan a single ticker (optional)", placeholder="e.g. AAPL")
 
-# Sidebar Filters
-with st.sidebar:
-    st.header("🛠 Filters")
-    max_tickers = st.slider("Number of tickers to scan", 5, 50, 10, key="max_tickers")
-    min_bid = st.number_input("Minimum Bid ($)", value=0.30, step=0.01, key="min_bid")
-    min_delta = st.slider("Min Delta", 0.05, 0.50, 0.15, key="min_delta")
-    max_delta = st.slider("Max Delta", 0.20, 0.70, 0.40, key="max_delta")
-    min_dte = st.slider("Min DTE", 5, 30, 10, key="min_dte")
-    max_dte = st.slider("Max DTE", 15, 90, 60, key="max_dte")
-    max_capital = st.number_input("Max Capital per Contract ($)", value=1000.0, step=50.0, key="max_capital")
-    sort_by = st.selectbox("Sort by", ["Highest Annualized Yield", "Highest Yield per Dollar"], key="sort_by")
+if opt_type == "put":
+    st.subheader("💰 Cash-Secured Puts")
+else:
+    st.subheader("📈 Covered Calls")
 
-# Run Screener
-btn_label = "Run PUT Screener" if opt_type == "put" else "Run CALL Screener"
-if st.button(f"🚀 {btn_label}"):
-    with st.spinner(f"📡 Fetching {single_ticker or 'tickers'}..."):
-        tickers = [single_ticker.upper()] if single_ticker else get_filtered_universe(max_tickers)
-        results = []
+scan = st.button(f"▶️ Run {opt_type.upper()} Screener")
 
-        for i, ticker in enumerate(tickers, 1):
-            st.write(f"📈 [{i}/{len(tickers)}] Fetching {ticker}...")
-            try:
-                raw_df = fetch_option_chain(ticker, opt_type)
-                if raw_df.empty:
-                    continue
+# === Fetch Function ===
+def fetch_options_data(symbol, opt_type):
+    params = {
+        "filter[underlying_symbol]": symbol,
+        "filter[type]": opt_type,
+        "sort": "-exp_date",
+        "page[limit]": 100,
+        "fields[options-contracts]": "contract,strike,bid,ask,exp_date,delta,volatility,open_interest,volume,last",
+        "api_token": API_KEY
+    }
+    try:
+        response = requests.get(BASE_URL, params=params)
+        if response.status_code != 200:
+            return pd.DataFrame()
+        data = response.json().get("data", [])
+        df = pd.json_normalize(data)
+        df["symbol"] = symbol
+        return df
+    except Exception:
+        return pd.DataFrame()
 
-                processed = calculate_metrics(raw_df, opt_type=opt_type)
-                processed['symbol'] = ticker
-                results.append(processed)
-                time.sleep(1.2)  # throttle to stay API-safe
+# === Screener Logic ===
+def screen_options(df, opt_type):
+    df['attributes.bid'] = df['attributes.bid'].fillna(0)
+    df['attributes.ask'] = df['attributes.ask'].fillna(0)
+    df['mid'] = (df['attributes.bid'] + df['attributes.ask']) / 2
+    df['capital_required'] = df['attributes.strike'] * 100
 
-            except Exception as e:
-                st.warning(f"⚠️ Error with {ticker}: {e}")
+    df['DTE'] = (pd.to_datetime(df['attributes.exp_date']) - datetime.utcnow()).dt.days
+    df['breakeven'] = df['attributes.strike'] - df['mid'] if opt_type == "put" else df['attributes.strike'] + df['mid']
+    df['annualized_yield'] = (df['mid'] * 100) / df['capital_required'] * (365 / df['DTE'])
+    df['yield_per_dollar'] = df['mid'] / df['attributes.strike']
+    df['pop'] = df['attributes.delta'].apply(calculate_pop)
+    df['ev'] = df.apply(lambda x: calculate_ev(x['mid'], x['capital_required'], x['pop']), axis=1)
+    return df
 
-        if results:
-            df_final = pd.concat(results).reset_index(drop=True)
-            df_final = df_final.rename(columns={
-                'attributes.contract': 'contract',
-                'attributes.strike': 'strike',
-                'attributes.delta': 'delta',
-                'attributes.volatility': 'iv',
-                'attributes.open_interest': 'oi',
-                'attributes.volume': 'volume',
-            })
+# === Scan Handler ===
+if scan:
+    all_results = []
+    tickers_df = load_filtered_tickers()
+    if single_ticker:
+        tickers_to_scan = [single_ticker] if single_ticker in tickers_df["code"].values else []
+    else:
+        tickers_to_scan = tickers_df["code"].tolist()[:10]
 
-            df_final['delta'] = df_final['delta'].fillna(0)
-            df_final['capital_required'] = df_final['strike'] * 100
-            df_final['mid'] = (df_final['attributes.bid'].fillna(0) + df_final['attributes.ask'].fillna(0)) / 2
-            df_final['breakeven'] = (
-                df_final['strike'] - df_final['mid']
-                if opt_type == 'put'
-                else df_final['strike'] + df_final['mid']
-            )
-            df_final['annualized_yield'] = (df_final['mid'] / df_final['capital_required']) * (365 / df_final['DTE']) * 100
-            df_final['yield_per_dollar'] = df_final['mid'] / df_final['capital_required']
+    for symbol in tickers_to_scan:
+        with st.spinner(f"🔍 Fetching {symbol}..."):
+            raw = fetch_options_data(symbol, opt_type)
+            if raw.empty:
+                continue
+            processed = screen_options(raw, opt_type)
 
-            user_filters = {
-                "min_bid": min_bid,
-                "min_delta": min_delta,
-                "max_delta": max_delta,
-                "min_dte": min_dte,
-                "max_dte": max_dte,
-                "max_capital": max_capital
-            }
+            filtered = processed[
+                (processed['mid'] >= min_bid) &
+                (processed['DTE'] >= min_dte) &
+                (processed['DTE'] <= max_dte) &
+                (processed['attributes.delta'].abs() >= min_delta) &
+                (processed['attributes.delta'].abs() <= max_delta) &
+                (processed['capital_required'] <= max_capital)
+            ]
+            if not filtered.empty:
+                all_results.append(filtered)
 
-            df_filtered = apply_filters(df_final, user_filters)
+    if all_results:
+        result_df = pd.concat(all_results).reset_index(drop=True)
+        display_cols = ["symbol", "contract", "strike", "mid", "breakeven", "DTE", "delta",
+                        "iv", "oi", "volume", "capital_required", "annualized_yield", "yield_per_dollar"]
+        st.success(f"✅ Screened {opt_type.upper()} Opportunities")
+        st.dataframe(result_df[display_cols].sort_values(
+            by="annualized_yield" if "Yield" in sort_key else "ev" if "EV" in sort_key else "pop",
+            ascending=False
+        ).head(15))
 
-            if not df_filtered.empty:
-                sort_col = "annualized_yield" if sort_by == "Highest Annualized Yield" else "yield_per_dollar"
-                df_filtered = df_filtered.sort_values(by=sort_col, ascending=False)
+        st.subheader("📊 Trade Analysis (Top 5 Results)")
+        for i, row in result_df.head(5).iterrows():
+            fig = generate_pl_chart(row["strike"], row["mid"], opt_type)
+            st.pyplot(fig)
+            st.caption(f"PoP: {row['pop']}, EV: ${row['ev']}")
+    else:
+        st.warning("⚠️ No trades met the filter criteria.")
 
-                st.success(f"✅ Screened {len(df_filtered)} {opt_type.upper()} Opportunities")
-                st.dataframe(df_filtered[[
-                    "symbol", "contract", "strike", "mid", "breakeven", "DTE",
-                    "delta", "iv", "oi", "volume", "capital_required",
-                    "annualized_yield", "yield_per_dollar"
-                ]])
-
-                st.subheader("📊 Trade Analysis (Top 5 Results)")
-                for _, row in df_filtered.head(5).iterrows():
-                    st.markdown(f"**{row['symbol']} - {row['contract']}**")
-                    plot_trade_pnl_chart(
-                        option_type=opt_type,
-                        strike=row['strike'],
-                        premium=row['mid'],
-                        underlying_price=row['breakeven'] if opt_type == 'put' else row['strike'],
-                        capital_required=row['capital_required'],
-                        DTE=row['DTE'],
-                        iv=row.get('iv', 0.3),
-                        delta=row.get('delta', 0.0)
-                    )
-                    st.markdown("---")
-
-            else:
-                st.warning("⚠️ No trades passed the filters. Try adjusting bid, delta, or capital limits.")
-        else:
-            st.error("❌ No valid contracts fetched. Try a different ticker or less restrictive filters.")
